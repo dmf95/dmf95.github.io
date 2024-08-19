@@ -6,22 +6,64 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Contact</title>
-  <meta name='description' content='User Experience Design Portfolio'>
+  <title>Contact Me</title>
+  <meta name='description' content='A portfolio & blog dedicated to my experience as a full-stack Data Scientist'>
 
   <link rel="canonical" href="http://localhost:4000/contact/">
-  <link rel="alternate" type="application/rss+xml" title="Vanessa Fayad - UX Design Portfolio" href="/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Domenic Fayad" href="/feed.xml">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Contact – Vanessa Fayad - UX Design Portfolio">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image:src" content="http://localhost:4000/images/16.jpg">
+  <meta name="twitter:title" content="Contact Me – Domenic Fayad">
+  <meta name="twitter:description" content="
+  
+  
+    
+      Your Name
+      
+    
+    
+      Your Email
+      
+    
+    
+      Your Message
+      
+    
+    
+      Send Message
+    
+    
+  
+  
+">
+  <meta name="twitter:image:src" content="http://localhost:4000/images/45.jpg">
 
   <!-- Facebook OpenGraph -->
-  <meta property="og:title" content="Contact – Vanessa Fayad - UX Design Portfolio">
-  <meta property="og:description" content="">
-  <meta property="og:image" content="http://localhost:4000/images/16.jpg">
+  <meta property="og:title" content="Contact Me – Domenic Fayad">
+  <meta property="og:description" content="
+  
+  
+    
+      Your Name
+      
+    
+    
+      Your Email
+      
+    
+    
+      Your Message
+      
+    
+    
+      Send Message
+    
+    
+  
+  
+">
+  <meta property="og:image" content="http://localhost:4000/images/45.jpg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -55,16 +97,6 @@
 <body>
 
   
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NT2GCZTBNN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-NT2GCZTBNN');
-</script>
-  
 
   <!-- begin header -->
 <header class="header">
@@ -75,7 +107,7 @@
         <div class="logo">
           <a class="logo__link" href="/">
           
-            <img class="logo__image" src="/images/logo.png" alt="Vanessa Fayad - UX Design Portfolio">
+            <img class="logo__image" src="/images/logo/mini-black-logo.jpg" alt="Domenic Fayad">
           
           </a>
         </div>
@@ -99,7 +131,7 @@
               
                 
                 <li class="nav__item">
-                  <a href="/work/" class="nav__link">Work</a>
+                  <a href="/work/" class="nav__link">Projects</a>
                 </li>
                 
               
@@ -137,13 +169,13 @@
   <div class="page-head">
 
     <div class="page-info">
-      <h1 class="page-title">Contact</h1>
+      <h1 class="page-title">Contact Me</h1>
       
     </div>
 
     
     <div class="page-image">
-      <img class="lazy" data-src="/images/16.jpg" alt="Contact">
+      <img class="lazy" data-src="/images/45.jpg" alt="Contact Me">
     </div>
     
     
@@ -154,11 +186,10 @@
 <!-- begin page -->
 <div class="container animate">
   <article class="page">
-    <div class="form-box">
-  <div class="contact-head">
-    
-  </div>
-  <form class="form" action="#" method="POST">
+    <div class="form-container">
+  
+  <form class="form"
+    action="#" method="POST">
     <div class="form__group">
       <label class="form__label screen-reader-text" for="form-name">Your Name</label>
       <input class="form__input" id="form-name" type="text" name="name" placeholder="Name" required>
@@ -169,12 +200,14 @@
     </div>
     <div class="form__group">
       <label class="form__label screen-reader-text" for="form-text">Your Message</label>
-      <textarea class="form__input" id="form-text" name="text" rows="7" placeholder="Message" required></textarea>
+      <textarea class="form__input" id="form-text" name="text" rows="10" placeholder="Message" required></textarea>
     </div>
     <div class="form__group">
       <button class="button button--primary" type="submit">Send Message</button>
     </div>
+    <input type="hidden" name="_next" value="/contact/thanks/" />
   </form>
+  <hr>
 </div>
   </article>
 </div>
@@ -198,18 +231,18 @@
             <ul class="social__list list-reset">
               
               <li class="social__item">
-                <a class="social__link" href="https://www.linkedin.com/in/vungerer/" target="_blank" rel="noopener"
+                <a class="social__link" href="https://www.linkedin.com/in/domenicfayad/" target="_blank" rel="noopener"
                   aria-label="Social link"><i class="ion ion-logo-linkedin"></i></a>
               </li>
               
               <li class="social__item">
-                <a class="social__link" href="https://dribbble.com/vungerer" target="_blank" rel="noopener"
-                  aria-label="Social link"><i class="ion ion-logo-dribbble"></i></a>
+                <a class="social__link" href="https://github.com/dmf95/" target="_blank" rel="noopener"
+                  aria-label="Social link"><i class="ion ion-logo-github"></i></a>
               </li>
               
               <li class="social__item">
-                <a class="social__link" href="https://github.com/vu97" target="_blank" rel="noopener"
-                  aria-label="Social link"><i class="ion ion-logo-github"></i></a>
+                <a class="social__link" href="https://twitter.com/DomenicFayad/" target="_blank" rel="noopener"
+                  aria-label="Social link"><i class="ion ion-logo-twitter"></i></a>
               </li>
               
             </ul>
@@ -226,7 +259,7 @@
   <div class="container">
     <div class="row">
       <div class="col col-12">
-        <div class="copyright">2024 &copy; <a href="/">Vanessa Fayad - UX Design Portfolio</a>. Published with <a href="https://jekyllrb.com/">Jekyll</a>.</div>
+        <div class="copyright">2024 &copy; <a href="/">Domenic Fayad</a>. Published with <a href="https://jekyllrb.com/">Jekyll</a>.</div>
       </div>
     </div>
   </div>

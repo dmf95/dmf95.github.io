@@ -38,6 +38,16 @@ layout: default
             {% if page.role %}
             <li class="work-meta__item"><strong>Role:</strong> <span>{{ page.role }}</span></li>
             {% endif %}
+            {% if page.tags %}
+            <li class="work-meta__item"><strong>Tags:</strong>
+              <span>
+                {% for tag in page.tags %}
+                  <a href="{{ site.baseurl }}/tags/?tag={{ tag | downcase | url_encode }}">{{ tag }}</a>
+                  {% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              </span>
+            </li>
+            {% endif %}
           </ul>
         </div>
       </div>
@@ -74,7 +84,7 @@ layout: default
                 <div class="work__category">{{ page.previous.category }}</div>
                 {% endif %}
                 <h3 class="work__title"><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h3>
-                {% if page.previous.category %}
+                {% if page.previous.description %}
                 <p class="work__description">{{ page.previous.description }}</p>
                 {% endif %}
               </div>
@@ -92,7 +102,7 @@ layout: default
                 <div class="work__category">{{ page.next.category }}</div>
                 {% endif %}
                 <h3 class="work__title"><a href="{{ page.next.url }}">{{ page.next.title }}</a></h3>
-                {% if page.next.category %}
+                {% if page.next.description %}
                 <p class="work__description">{{ page.next.description }}</p>
                 {% endif %}
               </div>

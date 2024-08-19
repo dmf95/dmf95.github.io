@@ -1,24 +1,36 @@
 ---
 layout: page
 title: About
-description: I'm a creative and curious person that enjoys crafting delightful and meaningful digital experiences.
 permalink: /about/
-image: "/images/about-vanessa.jpg"
-image_caption: 'Photo of me hiking Panorama Ridge in BC.'
+image: "/images/about/dom-run.jpg"
+image_caption: 'Enjoying a fall run along Cannon Beach, 2023.'
 ---
-With three years of experience in the field, I've honed my skills in crafting intuitive interfaces that connect users with products. In my experience as an intern at Visier, I helped define the vision of their Analytics solution with a focus on email scheduling and analysis editing. Recently, I've enjoyed working on freelance projects where I've designed digital solutions for clients in IT, film, health, and hospitality industries. 
 
-My design philosophy is deeply rooted in empathy. I believe that understanding the users' needs, behaviors, and motivations is the cornerstone of crafting interfaces that resonate. My goal is to create experiences that not only function flawlessly, but also leave users with a sense of delight and satisfaction.
+## Hello!
 
-I'm activitely on the lookout for exciting new work opportunities!
+Welcome to my portfolio-blog! I’m Domenic, but you can call me Dom. Here, I share my journey in applied data science and personal milestones.
+
+## About Me
+
+I’m passionate about learning and growth. In my spare time, I enjoy sports, games, and sci-fi. I follow the NFL, NHL, and the Premier League, supporting the 49ers, Oilers, and Manchester United. My hobbies include soccer, running, board games, and video games like FIFA and Zelda. I also indulge in Fantasy Sports and Clash Royale.
+
+I dive deep into data science, especially causal inference, which fuels my drive to uncover actionable insights. When I’m not working, I cherish time with my partner Vanessa and our dog Arlo. 
+
+Explore more about my sports card collecting on [my dedicated site](https://www.goatsportscards.com/), where I go by *goat.sportscards*.
+
+## What I Do
+
+I help decision-makers by turning complex problems into clear, data-driven solutions. As a Sr. Data Scientist at [lululemon](https://shop.lululemon.com/), I build analytics pipelines and create data stories to enhance the retail experience.
+
+## Connect with Me
+
+You can find me on [LinkedIn](https://www.linkedin.com/in/domenicfayad/), [Github](https://github.com/dmf95), and [Twitter](https://twitter.com/DomenicFayad?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor).
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/about-arlo.jpg" loading="lazy">
-    <img src="/images/about-family.jpg" loading="lazy">
-    <img src="/images/about-foodie.jpg" loading="lazy">
+    <img src="/images/about/arlo-xmas.jpg" loading="lazy">
+    <img src="/images/about/hike.jpg" loading="lazy">
+    <img src="/images/about/dom-ness-fun.jpg" loading="lazy">
   </div>
   <em>Gallery / Hobbies</em>
 </div>
-
-When I'm not designing, I'm usually taking [photos of my dog](https://www.instagram.com/arlo.thetoy/), deciding what to eat next, or doing something [active like an Orangetheory class or run](https://www.strava.com/athletes/27274012). 

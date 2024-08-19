@@ -1,414 +1,342 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Vanessa Fayad - UX Design Portfolio</title>
-        <description>User Experience Design Portfolio</description>
+        <title>Domenic Fayad</title>
+        <description>A portfolio &amp; blog dedicated to my experience as a full-stack Data Scientist</description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 25 Jul 2024 16:23:51 -0700</pubDate>
-        <lastBuildDate>Thu, 25 Jul 2024 16:23:51 -0700</lastBuildDate>
+        <pubDate>Sun, 18 Aug 2024 17:06:10 -0700</pubDate>
+        <lastBuildDate>Sun, 18 Aug 2024 17:06:10 -0700</lastBuildDate>
         <generator>Jekyll v4.3.2</generator>
         
             <item>
-                <title>Improving the UX of Superstore&apos;s product pages</title>
-                <description>&lt;h1 id=&quot;online-grocery-shopping-a-new-way-to-get-my-food&quot;&gt;Online grocery shopping: A new way to get my food&lt;/h1&gt;
+                <title>The data science swiss-army knife</title>
+                <description>&lt;h2 id=&quot;full-stack-analytics-is-that-made-up&quot;&gt;Full-stack analytics… is that made up?&lt;/h2&gt;
+&lt;p&gt;Maybe?&lt;/p&gt;
 
-&lt;p&gt;Like many foodies, one of the most pronounced changes in my lifestyle early in the pandemic was my diet. Specifically, where I went for food and how I bought my groceries. Getting food was no longer as simple as walking a few blocks and entering a physical store or restaurant.&lt;/p&gt;
+&lt;p&gt;Though, I am &lt;strong&gt;not&lt;/strong&gt; the originator! The first time I heard of the term I was at an Adobe conference, where I came across &lt;a href=&quot;https://www.fullstackanalyst.io/the-full-stack-analyst/&quot;&gt;Frederik Werner’s Full Stack Analyst Blog&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Like me, many of my fellow Vancouverites had to change their grocery shopping habits: from buying in-store to buying online. As a result, it’s no surprise to hear that the online grocery market was one of the main digital beneficiaries during the pandemic. This is due to shoppers wanting to avoid public places, government orders to stay at home, and the continued need for groceries and essential goods (Keyes, 2021).&lt;/p&gt;
+&lt;p&gt;It is a &lt;del&gt;generous&lt;/del&gt;  title that I have adopted in recent times to help communicate all of the things that I can do with data.&lt;/p&gt;
 
-&lt;p&gt;Us consumers were pretty fortunate though, since many options suddenly became available to buy food online (groceries and takeout). To name a few, Walmart, Costco, HelloFresh, Instacart and Real Canadian Superstore emerged as popular options to buy groceries online in Canada.&lt;/p&gt;
+&lt;p&gt;Some days, it means that I am a &lt;strong&gt;Digital Analyst&lt;/strong&gt; pitching the value of analyzing customer fallthrough and retention in Adobe Analytics to my Product Manager.&lt;/p&gt;
 
-&lt;h2 id=&quot;buying-groceries-from-my-local-superstore-online&quot;&gt;Buying groceries from my local Superstore, online&lt;/h2&gt;
+&lt;p&gt;Other days, it means that I am a &lt;strong&gt;Data Analyst&lt;/strong&gt; writing SQL to query POS transaction data from the on-premises data warehouse, and running an affinity analysis in R.&lt;/p&gt;
 
-&lt;p&gt;My family has shopped at Real Canadian Superstore for as long as I can remember. When I decided to make my first online grocery order, I chose to buy from a store I knew well. While I was able to accomplish my task of ordering groceries, I noticed so many opportunities within the process for design intervention that would have allowed for a much smoother buying process. This post aims to evaluate the product page specifically as I experienced the most friction here.&lt;/p&gt;
+&lt;p&gt;Still, on other days, I am a &lt;strong&gt;Data Engineer&lt;/strong&gt; &amp;amp; &lt;strong&gt;BI Developer&lt;/strong&gt; writing API GET requests in R or Python and creating data pipelines to be ingested and transformed into an insight-rich and user-friendly PowerBI Dashboard.&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;And finally on whatever days that are left, I become a &lt;strong&gt;Data Scientist&lt;/strong&gt; that attempts to classify unstructured text data using a mixed membership approach to topic modeling in R.&lt;/p&gt;
 
-&lt;h2 id=&quot;evaluating-experience-opportunities-at-superstore&quot;&gt;Evaluating experience opportunities at Superstore&lt;/h2&gt;
+&lt;p&gt;These are all the things that I have become over the years to be able to answer the problems that I find most interesting.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Problem 1:&lt;/strong&gt; Pizza ad below “Fruits and Vegetables” heading appears out of place in its current position. &lt;br /&gt;
-&lt;strong&gt;Hypothesis:&lt;/strong&gt; If the pizza ad moved from its current location then users would know they are on the right page because their fruits and vegetable products would logically follow the header. &lt;br /&gt;
-&lt;strong&gt;Recommendation:&lt;/strong&gt; Assuming the ad brings significant revenue to the website, it would be ideal to keep it near the top of the page before the user scrolls. Rather than being directly under the Fruits and Vegetables header, consider placing it above so that there is a logical flow of header and then products. &lt;br /&gt;
-&lt;strong&gt;Expected Result:&lt;/strong&gt; Increase the % of visits to Product Display Page (PDP).&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/images/about/fullstack-meme.png&quot; /&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Full Stack Analyst / &lt;a href=&quot;https://imgflip.com/i/5816bn&quot;&gt;Full Stack Analyst&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Problem 2:&lt;/strong&gt; Breadcrumb navigation is incomplete, making it difficult for users to fully visualize where they are within the site.&lt;br /&gt;
-&lt;strong&gt;Hypothesis:&lt;/strong&gt; If there were the added granularity of “Fruits and Vegetables” then users would be able to understand better where they are on the site because of the clear flow shown.&lt;br /&gt;
-&lt;strong&gt;Recommendation:&lt;/strong&gt; Add breadcrumb granularity (e.g. Home &amp;gt; Food &amp;gt; Fruits &amp;amp; Vegetables).&lt;br /&gt;
-&lt;strong&gt;Expected Result:&lt;/strong&gt; Lower the exit rate on product listing pages (PLP).&lt;/p&gt;
+&lt;p&gt;All jokes aside, I believe that a &lt;strong&gt;full-stack analyst&lt;/strong&gt; is someone who is curious by nature and loves to apply their diverse assortment of analytical skills and techniques to solve valuable problems.&lt;/p&gt;
 
-&lt;div class=&quot;gallery-box&quot;&gt;
-  &lt;div class=&quot;gallery&quot;&gt;
-    &lt;img src=&quot;/images/superstore-1.jpg&quot; loading=&quot;lazy&quot; alt=&quot;example&quot; /&gt;
-  &lt;/div&gt;
-  &lt;em&gt;Example of current Superstore product page ad and breadcrumbs&lt;/em&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Problem 3:&lt;/strong&gt; Opportunity to streamline add to cart process by combining the number of each item with the initial add to cart.&lt;br /&gt;
-&lt;strong&gt;Hypothesis:&lt;/strong&gt; If users could select the number of each item they wanted before clicking ‘ADD’ then they are likely to buy more of each item because it’s all in one simple step.&lt;br /&gt;
-&lt;strong&gt;Recommendation:&lt;/strong&gt; Allow user to select the number of an item they want before clicking ‘ADD’.&lt;br /&gt;
-&lt;strong&gt;Expected Result:&lt;/strong&gt; Increase the Add to Cart Rate.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Problem 4:&lt;/strong&gt; There’s a lot of font styles and colours that are competing for attention that could cause some user confusion. Ending dates also look squished with little/no padding.&lt;br /&gt;
-&lt;strong&gt;Hypothesis:&lt;/strong&gt; If the design of the sale, multi, and limit labels are simplified and font styles are reduced then users will have an easier time finding the information they need because there will be less visual noise that competes for their attention.&lt;br /&gt;
-&lt;strong&gt;Recommendation:&lt;/strong&gt; Update labels and simplify font styles.&lt;br /&gt;
-&lt;strong&gt;Expected Result:&lt;/strong&gt; Increase in Revenue Per Visit.&lt;/p&gt;
-
-&lt;div class=&quot;gallery-box&quot;&gt;
-  &lt;div class=&quot;gallery&quot;&gt;
-    &lt;img src=&quot;/images/superstore-2.jpg&quot; loading=&quot;lazy&quot; alt=&quot;example&quot; /&gt;
-  &lt;/div&gt;
-  &lt;em&gt;Example of current Superstore product page items and design&lt;/em&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Problem 5:&lt;/strong&gt; Selecting price range bins is simple, however it can become challenging for users who want to view products across multiple selections.&lt;br /&gt;
-&lt;strong&gt;Hypothesis:&lt;/strong&gt; If the price ranges section were updated to a slider then users would be given more freedom to select their desired range because they wouldn’t be stuck with the set ranges of $0-$4.99, $5-$9.99, etc.&lt;br /&gt;
-&lt;strong&gt;Recommendation:&lt;/strong&gt; Update price range section to a slider.&lt;br /&gt;
-&lt;strong&gt;Expected Result:&lt;/strong&gt; Increase in usage of price range section as a method to filter products.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Problem 6:&lt;/strong&gt; Unable to search for specific items within the fruits and vegetables section while remaining in the section.&lt;br /&gt;
-&lt;strong&gt;Hypothesis:&lt;/strong&gt; If a search feature were added within product pages then users would be able to locate items they want with more ease because they would not have to scroll through the page (potentially 656 results) to find what they are looking for.&lt;br /&gt;
-&lt;strong&gt;Recommendation:&lt;/strong&gt; Add a search feature within this section.&lt;br /&gt;
-&lt;strong&gt;Expected Result:&lt;/strong&gt; Lower cart abandonment rate&lt;/p&gt;
-
-&lt;div class=&quot;gallery-box&quot;&gt;
-  &lt;div class=&quot;gallery&quot;&gt;
-    &lt;img src=&quot;/images/superstore-3.jpg&quot; loading=&quot;lazy&quot; alt=&quot;example&quot; /&gt;
-  &lt;/div&gt;
-  &lt;em&gt;Example of current Superstore price filter and search&lt;/em&gt;
-&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;redesign&quot;&gt;Redesign&lt;/h2&gt;
-
-&lt;p&gt;Finally, it was time to redesign the page. In addition to making updates based on my recommendations, I made minor tweaks to the user interface to give the site a slight facelift.&lt;/p&gt;
-
-&lt;div class=&quot;gallery-box&quot;&gt;
-  &lt;div class=&quot;gallery&quot;&gt;
-    &lt;img src=&quot;/images/superstore-redesign.jpg&quot; loading=&quot;lazy&quot; alt=&quot;redesign&quot; /&gt;
-  &lt;/div&gt;
-  &lt;em&gt;Redesigned Superstore product page&lt;/em&gt;
-&lt;/div&gt;
-
-&lt;p&gt;If you want to learn more about this project, please feel free to &lt;a href=&quot;https://vanessaungerer97@gmail.com&quot;&gt;get in touch&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;That, or a generally informed and indecisive person as it relates to careers within data &amp;amp; analytics.&lt;/p&gt;
 </description>
-                <pubDate>Mon, 20 Apr 2020 00:00:00 -0700</pubDate>
-                <link>http://localhost:4000/blog/superstore</link>
-                <guid isPermaLink="true">http://localhost:4000/blog/superstore</guid>
+                <pubDate>Fri, 19 Nov 2021 00:00:00 -0800</pubDate>
+                <link>http://localhost:4000/blog/full-stack-analytics</link>
+                <guid isPermaLink="true">http://localhost:4000/blog/full-stack-analytics</guid>
                 
-                <category>side project</category>
+                <category>all-projects</category>
                 
                 
             </item>
         
             <item>
-                <title>Luna</title>
-                <description>&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;#empathize&quot;&gt;Empathize&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#define&quot;&gt;Define&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#ideate&quot;&gt;Ideate&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#prototype-and-test&quot;&gt;Prototype and test&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#reflect&quot;&gt;Reflect&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
+                <title>Top 6 analytics initiatives that happened in Vancouver, 2020</title>
+                <description>&lt;p&gt;&lt;em&gt;&lt;a href=&quot;https://theonebrief.com/wp-content/uploads/2019/11/Collab_Website_image-1000x589_3.jpg&quot;&gt;Image&lt;/a&gt;: Fight To The Top: Is Collaboration The New Competition, from TheOneBrief&lt;/em&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;In a previous &lt;a href=&quot;/2020/12/23/badm-blog-1/&quot;&gt;article&lt;/a&gt;, I briefly went over the purposeful 6-year history of the SFU BADM Hackathon and Industry Forum.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Luna is an idea for a native iOS app that helps people who experience stress and anxiety sleep better at night by improving their mental well being.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The event serves as a platform to connect and assist in the accelerated growth of analytics in the Greater Vancouver Area.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Team:&lt;/strong&gt; Raymond Chou &lt;br /&gt;
-&lt;strong&gt;Tools:&lt;/strong&gt; Figma, InVision, Otter.ai, Google Drive &lt;br /&gt;
-&lt;strong&gt;Timeline:&lt;/strong&gt; 3 months&lt;/p&gt;
+&lt;p&gt;As a former participant and current alumnus of the SFU Beedie and BADM programs, the event holds a special place in my heart. Aside from it being the reason that I landed my first job in analytics, the main reasons I value this hackathon are:&lt;/p&gt;
 
-&lt;h2 id=&quot;why-luna&quot;&gt;Why Luna?&lt;/h2&gt;
-&lt;p&gt;Sleep-deprived and filled with copious amounts of coffee ☕ - that’s how Raymond and I finished our intense UX boot camp. While TAing for the following cohort, we wanted to keep our UX skills sharp and decided to tackle a common interest in the problem space of sleep deprivation. We were curious to learn why we and so many others don’t get the recommended 8 hours of sleep each night. Was there an opportunity for design intervention?&lt;/p&gt;
-
-&lt;p&gt;We set some constraints and goals early on:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Limited to free research methods and resources&lt;/li&gt;
-  &lt;li&gt;Hi-fi prototype with 12-20 screens of up to two task flows&lt;/li&gt;
-  &lt;li&gt;Native iOS app&lt;/li&gt;
+  &lt;li&gt;An opportunity to create new connections with other analytics leaders here in Vancouver&lt;/li&gt;
+  &lt;li&gt;An occasion to deepen old connections from previous encounters&lt;/li&gt;
+  &lt;li&gt;A chance to learn and discuss best practices, as well as share experiences with the growing analytics community&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&quot;the-analytics-legend-of-vancouver-2020&quot;&gt;The Analytics Legend of Vancouver 2020&lt;/h2&gt;
 
-&lt;h2 id=&quot;empathize&quot;&gt;Empathize&lt;/h2&gt;
-&lt;h3 id=&quot;1-in-3-adults-get-less-than-7-hours-of-sleep-each-night-gov-canada&quot;&gt;1 in 3 adults get less than 7 hours of sleep each night (Gov Canada)&lt;/h3&gt;
+&lt;p&gt;As a member of the 2020 Industry Forum Steering Committee, I had the pleasure of working alongside some well-established Analytics leaders in Vancouver.&lt;/p&gt;
 
-&lt;p&gt;At the time of writing this, the sleep aid market is set to reach up to 114B USD in 2025⁵. A study done by the Government of Canada found that half of adults have trouble falling and staying asleep at night. The main factors contributing to this are chronic stress, sedentary lifestyles, and poor mental health².&lt;/p&gt;
+&lt;p&gt;This year’s steward, Matt St. John, Director of Ecommerce &amp;amp; Technology Analytics at Best Buy Canada (also my boss), encouraged me to bring some new form of excitement into the event.&lt;/p&gt;
 
-&lt;p&gt;​Studies have found that maintaining good daily habits can result in successful sleep. Some habits include regular wake-up and bed-times and practicing mindfulness and stress-reducing techniques².&lt;/p&gt;
+&lt;p&gt;With a lot of St. John’s coaching (and perhaps entirely biased by a life of sports and competition), I proposed a new competition to the Industry Forum: The Analytics Legend of Vancouver.&lt;/p&gt;
 
-&lt;h3 id=&quot;apps-like-headspace-sleep-sounds-wysa-and-calm-would-be-our-direct-competitors&quot;&gt;Apps like Headspace, Sleep Sounds, Wysa, and Calm would be our direct competitors&lt;/h3&gt;
-&lt;p&gt;With a large sleep aid market, we were interested in learning more about other sleep apps and the potential for a new and differentiated entrant.&lt;/p&gt;
+&lt;h2 id=&quot;a-symposium-of-analytics-achievement-by-analytics-pros-for-analytics-pros&quot;&gt;A Symposium of Analytics Achievement by Analytics Pros, for Analytics Pros&lt;/h2&gt;
 
-&lt;p&gt;Studies done specifically on HeadSpace and Calm found that&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;College students that regularly used the Calm app experienced reduced stress and boosted mindfulness⁴&lt;/li&gt;
-  &lt;li&gt;Users experienced a 14–28% decrease in stress after 10 days of using HeadSpace⁴&lt;/li&gt;
-  &lt;li&gt;HeadSpace improved user focus by 27%⁴&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Students use the BADM Hackathon as their way to learn, share, and connect with the Analytics community in Vancouver. Those who commit to this and perform well can be rewarded with exciting internships and job prospects.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/luna-competitors.jpg&quot; alt=&quot;Competitors&quot; /&gt;
-&lt;em&gt;About Luna direct competitors&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Why not create a similar event for industry pros?&lt;/p&gt;
 
-&lt;h3 id=&quot;interviewees-commonly-mentioned-stress-and-anxiety-as-culprits-for-sleep-deprivation&quot;&gt;Interviewees commonly mentioned stress and anxiety as culprits for sleep deprivation&lt;/h3&gt;
-&lt;p&gt;We conducted 7 interviews, asking open-ended questions to learn about people’s sleep, bedtime habits, and experiences with sleep deprivation. We interviewed people who have experienced sleep deprivation, targeting post-secondary students and working professionals. From the research, we found that stress and anxiety were common feelings that people experienced before bed. Other insights included phone usage before bed,  using meditation as a remedy, people caring about their sleep quality, and feeling a lack of incentive to follow good sleep habits.&lt;/p&gt;
+&lt;p&gt;The Analytics Legend of Vancouver competition is all about connecting data pros in the GVA. It puts the spotlight on the most promising analytics initiatives happening in British Columbia.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/luna-themes.jpg&quot; alt=&quot;Themes&quot; /&gt;
-&lt;em&gt;Interview themes&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In the first-ever competition, six organizations were voted in by their peers to share why their greatest analytics achievement this year deserved legendary status, in 7 minutes or less.&lt;/p&gt;
+
+&lt;p&gt;The organization that was able to illustrate superior analytics innovation, transformative business impact, or dazzling presentation skills would be crowned The Legend by their peers.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-ernst--young&quot;&gt;1. Ernst &amp;amp; Young&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/ey_logo.png&quot; alt=&quot;Ernst &amp;amp; Young Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Presented by &lt;a href=&quot;https://www.linkedin.com/in/kanikasanduja/&quot;&gt;Kanika Sanduja&lt;/a&gt;, Senior Consultant &amp;amp; &lt;a href=&quot;https://www.linkedin.com/in/sam-mazerolle/&quot;&gt;Sam Mazerolle&lt;/a&gt;, AI Consultant&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Topic:&lt;/strong&gt; Using Deep Q Reinforcement Learning to optimize front-end collections treatment for Big Banks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intro:&lt;/strong&gt; How do the big banks use their data to inform smarter debt collection strategies? Traditional collections strategies are devised based on broad customer risk exposure segments customers are assigned to. This generalized approach ignores the relative cost of the benefits of competing treatments and creates inefficiencies in treatment resource allocation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; A front-end collections treatment strategy using a Deep-Q Reinforcement Learning model.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-aritzia&quot;&gt;2. Aritzia&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/aritzia_logo.png&quot; alt=&quot;Aritzia Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Presented by &lt;a href=&quot;https://www.linkedin.com/in/ojduval/&quot;&gt;Olivier Duval&lt;/a&gt;, Director of Digital Analytics&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Topic:&lt;/strong&gt; Building a one-stop-shop analytics portfolio that combines sales, returns, onsite customer behaviour, and product reviews to identify opportunities.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intro:&lt;/strong&gt; As a vertically integrated fashion company, Aritzia designs, manufactures, and sells women’s clothing under private brands. How can analytics support the various teams and help improve decisions around designing, buying, planning, and merchandising products?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; A one-stop-shop analytics portfolio that combines sales, returns, onsite customer behaviour, and product reviews to enable the identification of opportunities.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-rocky-mountaineer&quot;&gt;3. Rocky Mountaineer&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/rockymountaineer_logo.png&quot; alt=&quot;Rocky Mountaineer Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Presented by &lt;a href=&quot;https://www.linkedin.com/in/michael-lake-49534765/&quot;&gt;Michael Lake&lt;/a&gt;, Manager of Data Analytics&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Topic:&lt;/strong&gt; Building a sales optimization scheduling tool in PowerBI to identify opportunities for the Outside Sales team.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intro:&lt;/strong&gt; Rocky Mountaineer’s North American Outside Sales team members faced the challenge of covering large geographic areas with limited time and resources. In most cases, it was three or more states/provinces. How might the analytics team identify opportunities and optimize their efforts?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; The team built a PowerBI mapping tool that allowed the Outside Sales team to visualize all branch locations in their territory, understand the priority of visiting each of them, and plan their sales visits in the market.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-best-buy-canada&quot;&gt;4. Best Buy Canada&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/bestbuy_logo.png&quot; alt=&quot;Best Buy Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Presented by &lt;a href=&quot;https://www.linkedin.com/in/joshualoong/&quot;&gt;Joshua Loong&lt;/a&gt;, Data Scientist&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Topic:&lt;/strong&gt; Utilizing a novel testing methodology for a new multi-channel experience in order to manage risk and understand the true impact before the busy holiday season.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intro:&lt;/strong&gt; If the retail industry were a sport, the holiday season would be the playoffs. This year, the teams at Best Buy Canada faced the challenge of designing and creating a safe and optimized multi-channel retail experience in time for the holidays. A solution that, if proven a winner, needed to go live in 130 stores across the country. The analytics teams needed to develop a test approach that would communicate risk to the senior leadership team and didn’t require randomization at the user level (since it’s a combined online and offline experience).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; The analytics team used advanced counterfactual modeling to compare a number of cities with the new experience to a synthetic group of other regions with the old experience, based on cross-functional datasets from e-commerce, store, finance, and user experience.&lt;/p&gt;
+
+&lt;h3 id=&quot;5-coast-capital-savings&quot;&gt;5. Coast Capital Savings&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/coastcapital_logo.png&quot; alt=&quot;Coast Capital Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Presented by &lt;a href=&quot;https://www.linkedin.com/in/robhollerin/&quot;&gt;Rob Hollerin&lt;/a&gt;, Director of Analytics and Data Science&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Topic:&lt;/strong&gt; Learning how Coast Capital Savings has leverage analytics across the organization to navigate through the Pandemic.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intro:&lt;/strong&gt; How did one of the most well-known credit unions in the lower mainland use analytics to navigate the uncertainty of the COVID-19 pandemic? The team at Coast Capital Savings walked us through some of the most exciting initiatives they worked on throughout the year.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; From integrating new data sources to machine learning and qualitative research in order to identify and support their COVID impacted members, the work this year allowed the analytics team to improve their understanding of member behaviour and the financial implication in these changing times.&lt;/p&gt;
+
+&lt;h3 id=&quot;6-vancouver-coastal-health&quot;&gt;6. Vancouver Coastal Health&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/vch_logo.png&quot; alt=&quot;Vancouver Coast Capital Health Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Presented by &lt;a href=&quot;https://www.linkedin.com/in/aleemteja/&quot;&gt;Aleem Teja&lt;/a&gt;, Director of System Improvement&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Topic:&lt;/strong&gt; Increasing patient traffic safely during the pandemic in order to deliver timely care&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intro:&lt;/strong&gt; Not all superheroes wear capes, some wear scrubs! In the wake of one of the most devastating pandemics that has swept the modern world, the team at Vancouver Coastal Health asked us to imagine visiting one of their hospitals during the pandemic. Picture this: you have an app that tells you how long it will take to travel to the outpatient clinic. You get there early, but you are surprised by a long lineup for the elevators. Now you may be thinking, will you make it to your appointment on time?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; The superhero analytics team at Vancouver Coastal Health told a riveting story on how they used modeling masks to increase elevator throughput. Decision-makers at VGH’s Gordon and Leslie Diamond Healthcare Centre implemented social distancing guidelines to keep patients safe on the way to their clinic appointments.&lt;/p&gt;
+
+&lt;h2 id=&quot;this-years-analytics-legend-of-vancouver&quot;&gt;This year’s Analytics Legend of Vancouver&lt;/h2&gt;
+
+&lt;p&gt;All six presentations were fantastic, but there can only be one champ: this year, Michael Lake and Rocky Mountaineer were crowned the 2020 Analytics Legend of Vancouver!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/analyticslegend_slide.png&quot; alt=&quot;Analytics Legend 2020&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Michael and his team exemplified what it means to be an analytics leader in Vancouver. It’s not always about the most complex algorithm; it is critical to realize that analytics does not win in silos. Before you write a line of code, there are two magical ingredients needed to cook up a win: problem identification, and bringing others along for the ride.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;HMW help people experiencing stress and anxiety improve their mental wellbeing so that they can sleep better at night?&lt;/p&gt;
+  &lt;p&gt;“If I were given one hour to save the planet, I would spend 59 minutes defining the problem and one minute resolving it.”&lt;br /&gt;
+&lt;br /&gt;
+&lt;em&gt;Albert Einstein&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;define&quot;&gt;Define&lt;/h2&gt;
+&lt;p&gt;Perhaps inspired by the great Albert Einstein, the data folks at Rocky Mountaineer prioritized focusing on the right problem and delivered a BI tool that significantly improved the productivity of their Outside Sales team. Pair that with a masterful sprinkle of analytics wow factor, and it’s no surprise that the team earned the Analytics Legend of Vancouver title.&lt;/p&gt;
 
-&lt;h3 id=&quot;who-are-we-designing-for&quot;&gt;Who are we designing for?&lt;/h3&gt;
-&lt;p&gt;We created Alexandria to encompass the pain points, motivations, and behaviors found from our interviews. She’s a stressed student that is always up late studying and only gets 5-6 hours of sleep each night as a consequence. She wants to get into a routine of sleeping earlier but often finds it difficult to calm their thoughts. On top of that, her phone is a distraction before bed with a constant fear of missing out.&lt;/p&gt;
+&lt;p&gt;Eternal bragging rights, a custom trophy supplied by SFU, and a great conversation starter for the next time we meet. Special mention to Best Buy Canada and Vancouver Coastal Health who were this year’s runners-ups.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/luna-persona.jpg&quot; alt=&quot;Persona&quot; /&gt;
-&lt;em&gt;Persona&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;as-a-student-who-is-often-anxious-i-want-access-to-a-library-of-sleep-stories-sounds-and-audios-to-listen-to-before-bedtime-so-that-i-can-calm-myself-down-and-fall-asleep-more-easily&quot;&gt;As a student who is often anxious, I want access to a library of sleep stories, sounds, and audios to listen to before bedtime so that I can calm myself down and fall asleep more easily&lt;/h3&gt;
-&lt;p&gt;Brainstorming user stories helped us determine potential solutions for Alexandria. We then grouped the stories into epics, with our core epic being to play sleep audios as this would best support our design challenge.&lt;/p&gt;
-
-&lt;p&gt;Based on our research, we created a story about how Alexandria might discover and use Luna for the first time.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-scenario.jpg&quot; alt=&quot;Scenario Map&quot; /&gt;
-&lt;em&gt;Scenario map&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;designed-a-golden-path-for-how-alexandria-might-accomplish-her-goal&quot;&gt;Designed a golden path for how Alexandria might accomplish her goal&lt;/h3&gt;
-&lt;p&gt;Here, we brainstormed the screens, flow, call-to-action buttons, and system decisions. The diagram below did end up changing as a result of user testing results, but this was the initial concept of Luna.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-task.jpg&quot; alt=&quot;Task Flow&quot; /&gt;
-&lt;em&gt;Task flow diagram&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;ideate&quot;&gt;Ideate&lt;/h2&gt;
-&lt;h3 id=&quot;inspiration&quot;&gt;Inspiration&lt;/h3&gt;
-&lt;p&gt;Raymond and I looked at competitor and other apps for inspiration. We set up a collaborative board and added categories for various screens and elements with the goal of creating an experience that users are familiar with.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-inspo.jpg&quot; alt=&quot;Inspiration&quot; /&gt;
-&lt;em&gt;Inspiration&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;sketch&quot;&gt;Sketch&lt;/h3&gt;
-&lt;p&gt;We also sketched multiple variations of each screen from our task flow. We used dot voting to choose which ideas we would digitize. Check out some of our very rough sketches below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-sketch.jpg&quot; alt=&quot;Skecth&quot; /&gt;
-&lt;em&gt;Sketches&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&quot;moodboard&quot;&gt;Moodboard&lt;/h3&gt;
-&lt;p&gt;When brainstorming how we wanted Luna to look and feel, we came up with the following mood board that highlights key words such as “calm”, “relaxing”, “warm”, and “welcoming”.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-mood.jpg&quot; alt=&quot;Mood&quot; /&gt;
-&lt;em&gt;Moodboard&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&quot;typography&quot;&gt;Typography&lt;/h3&gt;
-&lt;p&gt;Conforming with Apple’s Human Interface Guidelines, we used the typefaces SF Pro Text and SF Pro Display throughout the app.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-type.jpg&quot; alt=&quot;Type&quot; /&gt;
-&lt;em&gt;Type&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&quot;colour&quot;&gt;Colour&lt;/h3&gt;
-&lt;p&gt;We extracted colours from our mood board to achieve a look and feel that was fitting for Luna.&lt;/p&gt;
-
-&lt;p&gt;Blue is the primary colouraand is known for its stress-reducing properties. The palette is mostly analogous with a mixture of blues and purples. A yellow was added for the Luna moon and to help evoke feelings of warmth and optimism. The primary colours used are darker tones to help users reduce eye strain before bed. We wanted Luna to be accessible and ensured with our colour choices met WCAG AA standards throughout the app.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-colour.jpg&quot; alt=&quot;Colour&quot; /&gt;
-&lt;em&gt;Colour&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;logo&quot;&gt;Logo&lt;/h3&gt;
-&lt;p&gt;Luna, another word for the moon, was chosen as the app name as we wanted something memorable and that users could easily find on their phones before going to bed. Other app name contenders were Zenny, CloudScape, and Medi. Dot voting led us to pick Luna.&lt;/p&gt;
-
-&lt;p&gt;Comfortaa, a rounded geometric sans-serif font, was chosen as it evokes comfort and coziness. The Luna moon used in place of the “u” was added to complete the wordmark and give it a unique look.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-logo.jpg&quot; alt=&quot;Logo&quot; /&gt;
-&lt;em&gt;Logo&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;prototype--test&quot;&gt;Prototype &amp;amp; test&lt;/h2&gt;
-&lt;h3 id=&quot;high-fidelity&quot;&gt;High fidelity&lt;/h3&gt;
-&lt;p&gt;It took multiple iterations to achieve the desired look and feel of Luna.&lt;/p&gt;
-
-&lt;p&gt;We conducted usability test sessions for the first two iterations of Luna. We fixed usability issues in our greyscale prototypes, whereas the hi-fi focused on cosmetic issues and UI.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-v1.jpg&quot; alt=&quot;Low Fidelity&quot; /&gt;
-&lt;em&gt;Low fidelity (V1) screens&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-hifi.jpg&quot; alt=&quot;High Fidelity&quot; /&gt;
-&lt;em&gt;High fidelity (final) screens&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;tasks-evaluated&quot;&gt;Tasks evaluated&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Find the part of the app that allows user to select a period where they won’t use their phone&lt;/li&gt;
-  &lt;li&gt;Select a gentle waves sleep track and choose 45 minute timer&lt;/li&gt;
-  &lt;li&gt;Post-test updates&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;design-updates&quot;&gt;Design updates&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-home1.jpg&quot; alt=&quot;Home&quot; /&gt;
-&lt;em&gt;Home design update - iteration 1&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-home2.jpg&quot; alt=&quot;Home&quot; /&gt;
-&lt;em&gt;Home design update - iteration 2&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-onboarding.jpg&quot; alt=&quot;Onboarding&quot; /&gt;
-&lt;em&gt;Onboarding - iteration 2&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-profile.jpg&quot; alt=&quot;Profile&quot; /&gt;
-&lt;em&gt;Profile - iteration 1&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/luna-sleepcycle.jpg&quot; alt=&quot;Sleep cycle&quot; /&gt;
-&lt;em&gt;Sleep cycle - iteration 2&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;result&quot;&gt;Result&lt;/h2&gt;
-&lt;p&gt;After multiple rounds of iterating and testing, we felt that we finished what we had set out to accomplish with this project. Watch the prototype video of Luna below, or try it out yourself on Figma.&lt;/p&gt;
-
-&lt;iframe style=&quot;border: 1px solid rgba(0, 0, 0, 0.1);&quot; width=&quot;800&quot; height=&quot;450&quot; src=&quot;https://www.figma.com/embed?embed_host=share&amp;amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FhvD3ZYwrSG47jMnR1VjRBv%2FPortfolio-Website%3Ftype%3Ddesign%26node-id%3D1851-4013%26scaling%3Dcontain%26page-id%3D1843%253A112%26starting-point-node-id%3D1851%253A4013&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;reflect&quot;&gt;Reflect&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Start with a paper prototype or card sort&lt;/strong&gt;
-During usability testing, we learned that people didn’t understand why a sleep app had a digital health feature. Users also questioned what digital health was and thought that the goal-setting workflow was an alarm clock. In hindsight, starting with a paper prototype or card sort could have been a fast and easy way to learn about this problem before designing.&lt;/p&gt;
-
-&lt;p&gt;​&lt;strong&gt;Collaborating with a partner on a project is extremely rewarding.&lt;/strong&gt;
-I had so much fun jamming on ideas with Raymond over the last 12 weeks. It was an excellent learning experience for us while we TAd together.&lt;/p&gt;
-
-&lt;p&gt;If you want to learn more about this project, please feel free to &lt;a href=&quot;https://vanessaungerer97@gmail.com&quot;&gt;get in touch&lt;/a&gt;!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Works Cited&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Calm (2020). About. &lt;a href=&quot;https://www.calm.com/blog/about?gclid=CjwKCAiAi_D_BRApEiwASslbJ36PrR3a1eIAluYnsCbrQP-dLBdj_tTL4zAOPvClt-w8MvqEwjGUTxoCH9kQAvD_BwE&quot;&gt;Link to site&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Government of Canada (2020). Are Canadian adults getting enough sleep? &lt;a href=&quot;https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-adults-getting-enough-sleep-infographic.html&quot;&gt;Link to article&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Headspace (2020). About Headspace. &lt;a href=&quot;https://www.headspace.com/about-us&quot;&gt;Link to site&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Healthline (Sept 23, 2020). Headspace vs. Calm: How Do These Meditation Apps Compare? &lt;a href=&quot;https://www.healthline.com/health/headspace-vs-calm&quot;&gt;Link to site&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;PR Newswire (May 15, 2020). Sleep Aids Market Worth $114.15 Billion by 2025: Exclusive Report by Infinium Global Research. &lt;a href=&quot;https://www.prnewswire.com/news-releases/sleep-aids-market-worth-114-15-billion-by-2025-exclusive-report-by-infinium-global-research-301060012.html&quot;&gt;Link to report&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Think your team is worthy of analytic legend status? Well, then I expect to see you at next year’s Industry Forum.&lt;/p&gt;
 </description>
-                <pubDate>Wed, 15 Jan 2020 00:00:00 -0800</pubDate>
-                <link>http://localhost:4000/blog/luna</link>
-                <guid isPermaLink="true">http://localhost:4000/blog/luna</guid>
+                <pubDate>Wed, 06 Jan 2021 00:00:00 -0800</pubDate>
+                <link>http://localhost:4000/blog/badm-blog-2</link>
+                <guid isPermaLink="true">http://localhost:4000/blog/badm-blog-2</guid>
                 
-                <category>side project</category>
+                <category>all-projects</category>
+                
+                <category>events</category>
                 
                 
             </item>
         
             <item>
-                <title>Zoom Video Communications</title>
-                <description>&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+                <title>3 key topics from an analytics industry forum in Vancouver</title>
+                <description>&lt;p&gt;&lt;em&gt;&lt;a href=&quot;https://www.wigzo.com/blog/wp-content/uploads/2016/04/wordpress_plugin_for_elearning.png&quot;&gt;Image&lt;/a&gt;: Data Space from Wigzo&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;celebrating-analytics-in-2020&quot;&gt;Celebrating Analytics in 2020&lt;/h2&gt;
+
+&lt;p&gt;Most data &amp;amp; analytics pros can relate to the habitual routine of reaching for some trusty headphones and a go-to Spotify playlist in preparation for an analysis. The deeper the analysis, the deeper the focus.&lt;/p&gt;
+
+&lt;p&gt;We like to dive deep, so deep sometimes that lunch happens at dinner time. And sometimes its eggs for lunch, which means eggs for dinner.&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/dzuntOSsJuA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;Analysts need to dive deep to understand the problem. 
+In the same way that a doctor takes time to properly diagnose their patients, analysts must carefully diagnose the business problem. Performing open-heart surgery on a broken ankle is probably not going to help anything.&lt;/p&gt;
+
+&lt;p&gt;The ability to zoom in is clearly important, but so is the ability to zoom out. Analysts need to recognize what the bigger picture looks like in order to inform the best possible decision.&lt;/p&gt;
+
+&lt;p&gt;You might ask, how does an analyst acquire this skill?&lt;/p&gt;
+
+&lt;p&gt;The answer is simple: by chatting with you!&lt;/p&gt;
+
+&lt;p&gt;That’s right, you, dear analyst. Analytics professionals need the perspective and knowledge sharing that comes from learning about the experience of their peers.&lt;/p&gt;
+
+&lt;h2 id=&quot;hello-world&quot;&gt;Hello, World!&lt;/h2&gt;
+&lt;p&gt;I’m a Data Analyst at Best Buy Canada, and at the time of writing this post, I worked on the product technology teams that helps you get your products.&lt;/p&gt;
+
+&lt;p&gt;Within our analytics community of practice, one of the most important themes this year has been staying connected with people. For me, this has meant a combination of 1:1 virtual meetings and informal group chats with some folks that, in a pre-pandemic world, I would have visited at their desks.&lt;/p&gt;
+
+&lt;p&gt;Seeking human connection with my peers, not some transactional relationship that is bound to expire.
+It is also a phenomenal excuse to set up online board games on a late Friday afternoon to get the social and creative juices flowing.&lt;/p&gt;
+
+&lt;p&gt;Building authentic connection isn’t hard, it just takes a little sweat equity. And that is why hackathons and industry forum are so powerful.&lt;/p&gt;
+
+&lt;p&gt;One event that is truly excellent at empowering analytics folks to connect and learn from one another is the SFU BADM Hackathon &amp;amp; Industry Forum. It has provided a platform for developing a strong community of analytics leaders here in Vancouver since 2016.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-sfu-business-analytics--decisions-badm-hackathon&quot;&gt;The SFU Business Analytics &amp;amp; Decisions (BADM) Hackathon&lt;/h2&gt;
+
+&lt;p&gt;In 2016, Professors Robert Krider and Jason Ho at the SFU Beedie School of Business launched the first-ever Business Analytics and Decision-Making (BADM) Hackathon for students.&lt;/p&gt;
+
+&lt;p&gt;With the support of analytics pioneers in Vancouver that formed the steering committee, an annual event including an industry forum was born.&lt;/p&gt;
+
+&lt;p&gt;Several years later and the purpose of these forums remains the same: discuss best practices, experiences, lessons learned, and assist in the accelerated growth of analytics in the Greater Vancouver Area.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-1/steering_com.png&quot; alt=&quot;BADM Hackathon Steering Committee&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-2020-industry-forum-topics-and-format&quot;&gt;The 2020 Industry Forum Topics and Format&lt;/h2&gt;
+
+&lt;p&gt;44 analytics leaders from some of the top companies in Vancouver joined us virtually for the annual SFU BADM Vancouver Analytics Industry Forum.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-1/participants.png&quot; alt=&quot;BADM Hackathon Steering Committee&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first half of the event included three case study presentations followed by round-table discussions:&lt;/p&gt;
+
 &lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;#why-redesign-zoom&quot;&gt;Why redesign Zoom?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#design-process&quot;&gt;Design process&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#result&quot;&gt;Result&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#reflection&quot;&gt;Reflection&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Solving the analytics talent gap in Vancouver&lt;/li&gt;
+  &lt;li&gt;Storytelling with data&lt;/li&gt;
+  &lt;li&gt;Building a self-serve data culture&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;Its in these break-out sessions where these valuable human connections are made. In this article, I will be discussing the key takeaways that came from each individual group discussion.&lt;/p&gt;
 
-&lt;p&gt;Zoom is a cloud-based video conferencing platform that allows people to connect virtually. As a recognized leader in its market, individuals, businesses, and organizations use this platform globally. In 2020 when this project was done, the app had over 100 million downloads and a 3.7/5⭐ rating in the Google Play Store.&lt;/p&gt;
+&lt;p&gt;The second half of the event featured a new competition to come together and celebrate the &lt;strong&gt;six of the most exciting analytics initiatives happening in Vancouver this year&lt;/strong&gt; and the crowning of a champion. There will be a second article published in the next week all about this competition.&lt;/p&gt;
 
-&lt;p&gt;This case study offers a heuristic evaluation and proposed redesign for the Zoom mobile app, focusing on the ‘Start a Call’ task. It was a team effort where I had the pleasure of partnering up with a fellow UX designer, Tiffany Yap.&lt;/p&gt;
+&lt;h2 id=&quot;topic-1-solving-the-analytics-talent-gap-in-vancouver&quot;&gt;Topic 1: Solving the Analytics Talent Gap in Vancouver&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Project Type:&lt;/strong&gt; Academic &lt;br /&gt;
-&lt;strong&gt;Timeline:&lt;/strong&gt; 3 weeks&lt;/p&gt;
+&lt;p&gt;I joined Best Buy’s Digital Intelligence team as an intern Digital Analyst in the spring of 2018. I appreciated how the team never treated me as an intern. Instead of building PPT decks all day long, I was encouraged to chase business problems and expected to add value. It is one of the main reasons I decided to come back after my University program at SFU.&lt;/p&gt;
 
-&lt;h1 id=&quot;why-redesign-zoom&quot;&gt;Why redesign Zoom?&lt;/h1&gt;
-&lt;p&gt;With the pandemic shifting much of education, work, and social gatherings online, platforms such as Zoom, GoToMeeting, and Microsoft Teams have boomed in popularity. For myself, this shift meant going from dressing up and seeing people face-to-face to attending meetings in my PJs and dreaming of being in Hawaii with my virtual background of waves crashing behind me.&lt;/p&gt;
-
-&lt;p&gt;Tiffany and I shared a love-hate relationship with Zoom as we used it both for university and our UX Design program. We saw opportunities within it where even slight tweaks could enhance the user experience. Further recognizing the business consideration that video-conferencing technologies are increasing in popularity, we wondered how we could go about giving Zoom the facelift it needed to stay ahead?&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/zoom-meme.jpg&quot; alt=&quot;Meme&quot; /&gt;
-&lt;em&gt;Meme by @HlessHman&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;When scrolling through Zoom’s reviews on the Play Store, we realized that we weren’t alone with these feelings. Here’s what some other users had to say about the app:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/zoom-reviews.jpg&quot; alt=&quot;Reviews&quot; /&gt;
-&lt;em&gt;Zoom Google Play Store Reviews&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;design-process&quot;&gt;Design process&lt;/h1&gt;
-&lt;p&gt;This project was completed in 2 parts with the heuristic evaluation done first before the redesign.&lt;/p&gt;
-
-&lt;p&gt;The task flow of ‘starting a call’ followed the scenario of our user Tiffany wanting to start a call with her sister who would like to share her screen during the call. The current flow of how Tiffany would accomplish this task can be seen below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/zoom-currentflow.jpg&quot; alt=&quot;Task Flow&quot; /&gt;
-&lt;em&gt;Current Start a Call Task Flow&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;heuristic-evaluation&quot;&gt;Heuristic evaluation&lt;/h2&gt;
-&lt;p&gt;We used 9 of Nielsen Norman’s 10 Usability Heuristics to evaluate the usability of the ‘setting up a call’ task flow. Each heuristic was then rated using a scale of 0-4, 4 being a usability catastrophe.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/zoom-heuristics.jpg&quot; alt=&quot;Task Flow&quot; /&gt;
-&lt;em&gt;Heuristics and severity scale&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Finding and retaining analytics talent is not easy. Data &amp;amp; Analytics focused university programs - like the SFU BADM, SFU Masters in Big Data, UBC MBAN, UBC MDS - are creating strong pipelines of entry level talent. Still, hiring remains one of the key challenges that persist.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Heuristic evaluation involves having a small set of evaluators examine the interface and judge its compliance with recognized usability principles&lt;/p&gt;
-
-  &lt;p&gt;&lt;cite&gt;– Jakob Nielsen&lt;/cite&gt;&lt;/p&gt;
+  &lt;p&gt;How can organizations navigate the tricky landscape of finding both experienced and entry level talent?&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-1.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Matt St. John, Director of E-Commerce and Technology Analytics at Best Buy Canada, led the group through a lively discussion of the problems that exist with hiring analytics talent in Vancouver.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-2.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Below is a summary of the &lt;strong&gt;three most interesting takeaways&lt;/strong&gt; from the analytics talent gap in Vancouver:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-3.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Talent bottlenecks&lt;/strong&gt; caused by misalignment of talent expectation and industry needs, impeding hiring efforts&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Attrition of talent&lt;/strong&gt; to other roles (e.g. marketing, management, IT, etc..) and markets (East Coast, US, etc..) continues to be a challenge.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;New data &amp;amp; analytics roles at various levels of seniority&lt;/strong&gt; as a result of the maturing analytics in Vancouver. The top organizations must be able to recognize talent and pair them to relatively new roles. Examples included technical product managers and analytics practice leads.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-4.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The group also discussed &lt;strong&gt;six actionable opportunities&lt;/strong&gt; that exist to solve the talent gap:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-5.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Clearly articulate career development&lt;/strong&gt; with data and analytics professionals. Create career paths for young professionals with industry-aligned standardized job titles, descriptions, and salary bands.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Be more specific in the job description&lt;/strong&gt; and match them with the appropriate level of experience. For example, standardizing and communicating data science skills vs. data engineer skills may improve the matching of suitable candidates to opportunities.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Create industrywide support and mentorship program&lt;/strong&gt; to assist professionals as they work through their careers in Vancouver.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Develop consistent communication&lt;/strong&gt; and messaging across the industry to provide clarity, stability, and opportunity in the market.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Continue to actively participate&lt;/strong&gt; in different communities of interest where analytics practitioners can connect frequently and share opportunities.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Take advantage of remote work&lt;/strong&gt; to unlock the talent in other geographic areas.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-6.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;topic-2-storytelling-with-data&quot;&gt;Topic 2: Storytelling with Data&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-7.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“Storytelling is the greatest technology that humans have ever created.”  &lt;br /&gt;
+&lt;br /&gt;
+&lt;em&gt;Jon Westenberg&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;h2 id=&quot;redesign&quot;&gt;Redesign&lt;/h2&gt;
-&lt;p&gt;Tiffany and I presented our heuristic evaluation to educators and peers and were given the green light to move forward with the redesign. To help us decide what to tackle first, we created a prioritization matrix that looked at the impact versus effort to implement each design recommendation. Given our project time constraint, we tackled high impact changes first before moving onto changes that didn’t add much value to the user.&lt;/p&gt;
+&lt;p&gt;These days, everyone who knows how to use EXCEL and PowerPoint can call themselves a storyteller. But there is more to storytelling than cool visualizations.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-effortvimpact.jpg&quot; alt=&quot;Effort vs. Impact&quot; /&gt;
-&lt;em&gt;Redesign - effort vs. impact&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Before breaking into our discussion groups, Jeremy Coughlin, VP of Enterprise Analytics from Coast Capital Savings, summarized his &lt;strong&gt;four key takeaways&lt;/strong&gt; to improve your storytelling skills:&lt;/p&gt;
 
-&lt;p&gt;Next, we created a style guide as we wanted our redesign to closely match the app. During this process we noticed that Zoom uses many different shades of greys and blues throughout the app, some of which look very similar to each other. The app also didn’t seem to follow a grid or layout system. Since this wasn’t our focus for the project we decided to keep these as is and recommend for future redesigns to consider simplifying the colour palette and add in a grid or layout system to create a more cohesive design.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Be authentic. Let your own personality shine through.&lt;/li&gt;
+  &lt;li&gt;Get to the point. Keep it simple: tell people what you are going to tell them, tell them, then summarize.&lt;/li&gt;
+  &lt;li&gt;Drive action. Actionable insights will always defeat fun facts.&lt;/li&gt;
+  &lt;li&gt;Know your audience, and the context. The message is more important than the medium - tailor your presentation accordingly.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-styleguide.jpg&quot; alt=&quot;Style Guide&quot; /&gt;
-&lt;em&gt;Redesign - effort vs. impact&lt;/em&gt;&lt;/p&gt;
-&lt;h1 id=&quot;result&quot;&gt;Result&lt;/h1&gt;
+&lt;h2 id=&quot;topic-3-building-a-self-serve-data-culture&quot;&gt;Topic 3: Building a Self-Serve Data Culture&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-redesign1.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Self-serve data cultures are all about breaking down the barriers preventing data from being employed within our own organizations.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-redesign2.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;At Best Buy Canada, the analytics team has invested a lot of effort over the years to democratize data and knowledge at scale.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-redesign3.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;One recent example is the investment in Best Buy Canada’s Data University. Inspired by &lt;em&gt;&lt;a href=&quot;https://medium.com/airbnb-engineering/how-airbnb-democratizes-data-science-with-data-university-3eccc71e073a&quot;&gt;Airbnb’s approach to democratizing data&lt;/a&gt;&lt;/em&gt;, Best Buy’s Data University focused on bringing awareness, education, and support for all users within the company.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-redesign4.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Whether you are an analytics pro or someone who’s new to looking at data, a self-serve data culture is one that strives to provide the access, knowledge and tools necessary to use data to guide your solution.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-redesign5.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Organizations in Vancouver face similar hurdles in the pursuit of analytics maturity. Olivier Duval, the Director of Digital Analytics at Aritzia, led the group through his learnings of building a self-service analytics culture as summarized below:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-redesign6.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Self-serve analytics is a continuous journey. Requires training, support, mechanisms, and champions to support different users.&lt;/li&gt;
+  &lt;li&gt;Self-serve works better in different subsets. The organization needs to be OK with people making mistakes, and design programs to improve the overall data maturity.&lt;/li&gt;
+  &lt;li&gt;Self-serve does not have to be a free-for-all. Put appropriate governance in place and enforce a process whereby users must get their self-serve work vetted to ensure accuracy.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-redesign7.jpg&quot; alt=&quot;Redesign&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;celebrating-analytics-in-2020-is-about-building-meaningful-connections&quot;&gt;Celebrating Analytics in 2020 is About Building Meaningful Connections&lt;/h2&gt;
 
-&lt;h1 id=&quot;reflection&quot;&gt;Reflection&lt;/h1&gt;
+&lt;p&gt;In closing, I’d like to reflect on the importance of staying connected. Just because remote is the new normal, it does not mean we can’t start meaningful conversations with peers outside our organizations.&lt;/p&gt;
 
-&lt;p&gt;After 3 weeks of late night chats and working away on Figma, Tiffany and I presented our Zoom redesign to educators and peers where we received very positive reviews.&lt;/p&gt;
+&lt;p&gt;As mentioned earlier, it is critical for analytics leaders to build these relationships so that we can learn from one another and take these learnings into our own organizations. This is how we elevate the analytics maturity in Vancouver.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Excellent learning opportunity that taught me how to critique the usability of a design based on pre-established principles.&lt;/strong&gt; Using NN’s Heuristics, I learned how to objectively evaluate Zoom’s mobile app in order to find opportunities to create a more usable product.&lt;/p&gt;
+&lt;p&gt;Technology exists to bring us together, and what better occasion is there to come together than to celebrate our awesome craft by way of competition.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;I learned the importance of creating and utilizing a design system.&lt;/strong&gt; Before starting our redesign, Tiffany and I prepared a document of colours, typography, icons, and other elements that helped us design more effiently and be cohesive.&lt;/p&gt;
+&lt;p&gt;I look forward to seeing you at a future data and analytics meetup in Vancouver. I also eagerly await what the best analytics project of 2021 will be in the next Analytics Legend of Vancouver competition…&lt;/p&gt;
 
-&lt;p&gt;If you want to learn more about this project, please feel free to &lt;a href=&quot;https://vanessaungerer97@gmail.com&quot;&gt;get in touch&lt;/a&gt;!&lt;/p&gt;
 </description>
-                <pubDate>Wed, 15 Jan 2020 00:00:00 -0800</pubDate>
-                <link>http://localhost:4000/blog/zoom</link>
-                <guid isPermaLink="true">http://localhost:4000/blog/zoom</guid>
+                <pubDate>Wed, 23 Dec 2020 00:00:00 -0800</pubDate>
+                <link>http://localhost:4000/blog/badm-blog-1</link>
+                <guid isPermaLink="true">http://localhost:4000/blog/badm-blog-1</guid>
                 
-                <category>academic project</category>
+                <category>all-projects</category>
+                
+                <category>events</category>
                 
                 
             </item>
