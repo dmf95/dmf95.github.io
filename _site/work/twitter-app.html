@@ -6,22 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>2021 NHL Expansion Draft analyzer</title>
-  <meta name='description' content='Data science app using Python and Streamlit to visualize sentiment from NHL fans and insiders on Twitter.'>
+  <title>Analyzing Twitter sentiment and topics with Python and Streamlit</title>
+  <meta name='description' content='Data science app built using Python and Streamlit to run a text and sentiment analysis on Twitter data in real-time.'>
 
-  <link rel="canonical" href="http://localhost:4000/work/2021-07-15-nhl-draft-analyzer-app/">
+  <link rel="canonical" href="http://localhost:4000/work/twitter-app">
   <link rel="alternate" type="application/rss+xml" title="Domenic Fayad" href="/feed.xml">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="2021 NHL Expansion Draft analyzer – Domenic Fayad">
-  <meta name="twitter:description" content="Data science app using Python and Streamlit to visualize sentiment from NHL fans and insiders on Twitter.">
-  <meta name="twitter:image:src" content="http://localhost:4000/images/twitter_app/nhl_app_logo2.png">
+  <meta name="twitter:title" content="Analyzing Twitter sentiment and topics with Python and Streamlit – Domenic Fayad">
+  <meta name="twitter:description" content="Data science app built using Python and Streamlit to run a text and sentiment analysis on Twitter data in real-time.">
+  <meta name="twitter:image:src" content="http://localhost:4000/images/twitter_app/twitter_app_logo.png">
 
   <!-- Facebook OpenGraph -->
-  <meta property="og:title" content="2021 NHL Expansion Draft analyzer – Domenic Fayad">
-  <meta property="og:description" content="Data science app using Python and Streamlit to visualize sentiment from NHL fans and insiders on Twitter.">
-  <meta property="og:image" content="http://localhost:4000/images/twitter_app/nhl_app_logo2.png">
+  <meta property="og:title" content="Analyzing Twitter sentiment and topics with Python and Streamlit – Domenic Fayad">
+  <meta property="og:description" content="Data science app built using Python and Streamlit to run a text and sentiment analysis on Twitter data in real-time.">
+  <meta property="og:image" content="http://localhost:4000/images/twitter_app/twitter_app_logo.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -131,7 +131,7 @@
       <div class="col col-5 col-d-12">
         <div class="work-head__left">
           <div class="work-head__image">
-            <img class="lazy" data-src="/images/twitter_app/nhl_app_logo2.png" alt="2021 NHL Expansion Draft analyzer">
+            <img class="lazy" data-src="/images/twitter_app/twitter_app_logo.png" alt="Analyzing Twitter sentiment and topics with Python and Streamlit">
           </div>
           
         </div>
@@ -143,13 +143,13 @@
           
           <div class="work-category">Data Science & Analytics</div>
           
-          <h1 class="page-title">2021 NHL Expansion Draft analyzer</h1>
+          <h1 class="page-title">Analyzing Twitter sentiment and topics with Python and Streamlit</h1>
           
-          <p class="page-description">Data science app using Python and Streamlit to visualize sentiment from NHL fans and insiders on Twitter.</p>
+          <p class="page-description">Data science app built using Python and Streamlit to run a text and sentiment analysis on Twitter data in real-time.</p>
           
           <ul class="work-meta list-reset">
             
-            <li class="work-meta__item"><strong>Date:</strong> <span>15 Jul 2021</span></li>
+            <li class="work-meta__item"><strong>Date:</strong> <span>07 Jul 2021</span></li>
             
             
             
@@ -180,165 +180,33 @@
 <div class="container animate">
 
   <div class="page">
-    <blockquote>
-  <p>Streamlit app that visualizes sentiment from NHL fans and insiders on Twitter.</p>
-</blockquote>
+    <h2 id="39-minutes-and-41-seconds">39 minutes, and 41 seconds</h2>
 
-<h2 id="table-of-contents">Table of contents</h2>
-<ul>
-  <li><a href="#introduction">Introduction</a></li>
-  <li><a href="#methodology">Methodology</a></li>
-  <li><a href="#app-overview">App overview</a></li>
-  <li><a href="#setup">Setup</a></li>
-  <li><a href="#how-to-use-the-app">How to use the app</a></li>
-  <li><a href="#future-releases">Future releases</a></li>
-  <li><a href="#resources">Resources</a></li>
-  <li><a href="#developer-contact">Developer contact</a></li>
-</ul>
+<p>That was the average number of minutes that Twitter stole from me each day in the month of June.</p>
 
-<h2 id="introduction">Introduction</h2>
+<p>And yes, I know what you’re probably thinking - is it even appropriate to summarize with the mean?!</p>
 
-<h3 id="purpose">Purpose</h3>
+<p><img src="https://media.giphy.com/media/UqSRKTUpNfMHp3me35/giphy.gif" alt="Fake laugh GIF" /></p>
 
-<p>The <del>glorious</del> purpose of this project is to <strong>estimate sentiment</strong> from NHL fans and insiders on Twitter during the Seattle Kraken’s 2021 <strong>NHL Expansion Draft</strong>.</p>
+<p>There definitely were a few days that we can call… outliers. The median was closer to 30 minutes.</p>
 
-<h3 id="brief">Brief</h3>
+<h2 id="building-an-app-to-analyze-twitter-sentiment-and-topics">Building an app to analyze Twitter sentiment and topics</h2>
 
-<p>On July 21, 2021, the NHL will welcome the Seattle Kraken as the 32nd franchise in the league’s history. The much-anticipated expansion to the league requires the Kraken to select players from incumbent NHL teams around the league in what’s appropriately called an <strong>Expansion Draft</strong>.</p>
+<p>As I reflected on my mild Twitter addiction, I wondered what kind of sentiment &amp; topics I was being subjected to.</p>
 
-<p>The player selection rules and guidelines are the same as the ones used back in 2017 when the Vegas Golden Knights entered the league. To learn more about the rules, <a href="https://www.nhl.com/news/seattle-kraken-2021-nhl-expansion-draft-rules-same-as-vegas-golden-knights-followed/c-302586918">read this short article from the NHL</a>.</p>
+<p>Naturally, this evolved into a data science project with my good friend and data wizard <a href="https://shannonhlo.github.io/">Shannon Lo</a>.</p>
 
-<p>This project is an attempt to understand how people around the NHL feel about the Expansion Draft, in real-time. Specifically, treating NHL fans and NHL insiders differently and applying text analysis to both in separate pages in the app.</p>
+<p>We decided to build an app that takes in a keyword and a number of tweets and outputs several text analytics insights that come from summarizing data from the Twitter API.</p>
 
-<h3 id="the-draft-analyzer-a-streamlit-app">The Draft Analyzer (a Streamlit app)</h3>
-<p>I’ve iframed the app below. You can check out <a href="https://share.streamlit.io/dmf95/nhl-expansion-twitter-app/main/app.py">the live app deployed on Streamlit here</a>.</p>
+<h2 id="tweet-analyzer-streamlit-app">Tweet Analyzer Streamlit App</h2>
 
-<iframe src="https://share.streamlit.io/dmf95/nhl-expansion-twitter-app/main/app.py" width="100%" height="600">
+<p>In a future post, I will be covering the logic of our app. For now, feel free to explore the app and check out the source code available in our <a href="https://github.com/shannonhlo/twitter-streamlit-app">github repo</a>.</p>
+
+<p>I’ve iframed the app below. You can check out <a href="https://share.streamlit.io/shannonhlo/twitter-streamlit-app/main/twitter_app.py">the live app deployed on Streamlit here</a>.</p>
+
+<iframe src="https://share.streamlit.io/shannonhlo/twitter-streamlit-app/main/twitter_app.py" width="100%" height="600">
   <p>Your browser does not support iframes.</p>
 </iframe>
-
-<h2 id="methodology">Methodology</h2>
-
-<h3 id="getting-the-data">Getting the data</h3>
-<p>Data is retrieved from the <a href="https://developer.twitter.com/en/docs/twitter-api">Twitter API v2.0</a> using the <a href="https://www.tweepy.org/">tweepy Python library</a> and <del>top secret</del> personal Twitter developer credentials. To differentiate between NHL fans and insiders, we chose to leverage two different end-points: Twitter Search (NHL fans), and Twitter Timeline (NHL insiders). We will go into more detail in the <a href="#app-overview">app overview section</a></p>
-
-<h3 id="text-analytics">Text analytics</h3>
-<p>When we refer to text analytics, you can think of it as a set of different processes to create high-quality insight from tweet data.</p>
-
-<p>Below is a list of the different processes that were used:</p>
-
-<ul>
-  <li><strong>Sentiment analysis and classification</strong> to estimate both the general feeling of a tweet, as well as the extremity of that feeling concerning other tweets. We used a lexicon and rule-based sentiment analysis tool from the <a href="https://github.com/cjhutto/vaderSentiment">vaderSentiment python library</a>:
-    <ul>
-      <li><a href="https://github.com/cjhutto/vaderSentiment#vader-sentiment-analysis">VADER</a> (<strong>V</strong>alence <strong>A</strong>ware <strong>D</strong>ictionary and s<strong>E</strong>ntiment <strong>R</strong>easoner) = lexicon and rule-based sentiment analysis tool, specifically attuned to sentiments expressed in social media</li>
-      <li><a href="https://github.com/cjhutto/vaderSentiment#about-the-scoring">Compound score</a> = computed by summing the valence scores of each word in the lexicon, adjusted according to the rules, and then normalized to be between -1 (most extreme negative) and +1 (most extreme positive)</li>
-      <li>Positive sentiment: compound score &gt;= 0.05</li>
-      <li>Neutral sentiment: (compound score &gt; -0.05) and (compound score &lt; 0.05)</li>
-      <li>Negative sentiment: compound score &lt;= -0.05</li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>Topic modeling and Latent Dirichlet Allocation (LDA)</strong> to attempt to understand the main themes apparent in the cluster of tweets. This was done primarily through the <a href="https://pypi.org/project/gensim/">gensim python library</a></p>
-  </li>
-  <li>
-    <p><strong>Rule-based mixed-membership classification of text</strong> to label each of the NHL teams mentioned in a tweet. That is, each tweet can belong to 0, 1, or multiple NHL teams. The rules used are imperfect keywords (if keywords exist, then label as related NHL team). We used a combination of data manipulation and visualization libraries such as <code class="language-plaintext highlighter-rouge">pandas</code>, <code class="language-plaintext highlighter-rouge">numpy</code> and <code class="language-plaintext highlighter-rouge">altair</code>.</p>
-  </li>
-  <li>
-    <p><strong>Word clouds and custom top-tweet logic</strong> to get a quick overview of the top words seen on Twitter. We used the <a href="https://pypi.org/project/wordcloud/">worldcloud python library</a> in addition to various data manipulation libraries to accomplish this.</p>
-  </li>
-  <li><strong>Descriptive text analysis</strong> to conduct n-gram and frequency analysis, in addition to building summary KPIs. We used the same data manipulation and visualization libraries stated above.</li>
-</ul>
-
-<h3 id="streamlit-app">Streamlit app</h3>
-
-<p>We used <a href="https://streamlit.io/">Streamlit</a> to surface insights from the various analyses.</p>
-
-<p>What is Streamlit?</p>
-
-<blockquote>
-  <p>Streamlit is the fasted way to build and share data apps. It turns Python scripts into shareable web apps.</p>
-</blockquote>
-
-<p>In the following section, we will go into the nitty-gritty of our application.</p>
-
-<h2 id="app-overview">App overview</h2>
-
-<h3 id="app-structure">App structure</h3>
-
-<p>The app uses <a href="https://docs.streamlit.io/en/0.84.0/">Streamlit v0.84</a>. At the time of deployment, it did not natively support multi-page apps. As a result, we turned to the wonderful world of stack-overflow and Streamlit community threads and found a methodology to treat individual python scripts as a page in a Streamlit app. For credit and resources, see the <a href="#resources">resources section</a>.</p>
-
-<p>At a high level, the app structure behaved as described below:</p>
-
-<ol>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">app_multipage.py</code> is set up to enable multiple pages to be run</p>
-  </li>
-  <li>
-    <p>Twitter developer credentials are stored in a local folder named <code class="language-plaintext highlighter-rouge">.streamlit</code>, ignored by our <code class="language-plaintext highlighter-rouge">.gitignore</code> file</p>
-  </li>
-  <li>
-    <p>Required inputs to the app such as <code class="language-plaintext highlighter-rouge">nhl_app_accounts.csv</code>, <code class="language-plaintext highlighter-rouge">nhl_app_teams.csv</code>, and the <code class="language-plaintext highlighter-rouge">nhl_app_logo.png</code> are stored in the folder <code class="language-plaintext highlighter-rouge">assets</code></p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">fans.py</code>, <code class="language-plaintext highlighter-rouge">insiders.py</code>, and <code class="language-plaintext highlighter-rouge">readme.py</code> are created within a folder named <code class="language-plaintext highlighter-rouge">pages</code>. Each file is its own Streamlit application</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">app.py</code> combines user input and the functions from <code class="language-plaintext highlighter-rouge">app_multipage.py</code> to display the app page that was selected by the user (e.g. default page is <code class="language-plaintext highlighter-rouge">readme.py</code>)</p>
-  </li>
-</ol>
-
-<p>As mentioned in the <a href="#future-releases">future releases section</a>, we are working on a process diagram to visualize the flow of data used in our app.</p>
-
-<h3 id="fan-analyzer">Fan-analyzer</h3>
-<p>The goal of this page is to estimate how NHL fans around the league feel towards the NHL Expansion Draft.</p>
-
-<p>To do this, we used the Twitter Search API endpoint as it allows for flexible query search parameters. Every time this page runs, the <code class="language-plaintext highlighter-rouge">twitter_get_nhl</code> function is used to search for the most recent x many tweets having the keywords <code class="language-plaintext highlighter-rouge">expansion draft</code> or <code class="language-plaintext highlighter-rouge">expansiondraft</code>. Following this, various transformations are called to deliver text analytics insight and data visualizations.</p>
-
-<h3 id="nhl-insider-analyzer">NHL insider analyzer</h3>
-<p>Similar to the Fan-analyzer page, the goal of this page is to estimate sentiment on Twitter. However, this page is all about analyzing the sentiment of professionals in the NHL, which we refer to as insiders. Really, it is <del>an arbitrary</del> just a custom list of hockey reporters and analytics folks who offer popular takes on Twitter.</p>
-
-<p>This required using the Twitter Timeline API endpoint, which provides all the tweets posted by a specified user. Our logic simply loops through the aforementioned list of accounts and returns all of the tweets posted within 48 hours. Following this, similar transformations are made to deliver text analytics insight and data visualizations.</p>
-
-<h2 id="setup">Setup</h2>
-<h3 id="setting-up">Setting up</h3>
-<p>To run this app on your own, either <code class="language-plaintext highlighter-rouge">fork</code> this repository, or <code class="language-plaintext highlighter-rouge">git clone</code> into your local.</p>
-
-<h3 id="requirements">Requirements</h3>
-<p>See the <a href="https://github.com/dmf95/nhl-expansion-twitter-app/blob/main/requirements.txt">requirements.txt file</a> for the libraries and version required to run this app.</p>
-
-<h3 id="getting-data-from-twitter">Getting data from Twitter</h3>
-<p>You will need to get your approval from Twitter to get data from their API. You can <a href="https://developer.twitter.com/en/apply-for-access">apply for a Twitter developer account at this link</a>.</p>
-
-<p>There are various resources to help you with setting up your credentials - we found <a href="https://stackabuse.com/accessing-the-twitter-api-with-python">this article</a> to be a good resource.</p>
-
-<p><strong>Important reminder on protecting your credentials:</strong> If you plan on using git for version control, don’t forget to add a <code class="language-plaintext highlighter-rouge">.gitignore</code> file with the proper configurations to ensure your credentials stay private!</p>
-
-<h2 id="how-to-use-the-app">How to use the app</h2>
-<p>Coming soon! We are working on putting a visual demo here.</p>
-
-<h2 id="future-releases">Future releases</h2>
-<ul>
-  <li>Performance of the application and streamlit caching of results - TBA</li>
-  <li>Miro board process diagram to visualize the flow of information - TBA</li>
-  <li>Labeling of commits &amp; versioning - TBA</li>
-  <li>Refactoring and modularization of functions - TBA</li>
-  <li>Test automation and CI/CD - TBA</li>
-</ul>
-
-<h2 id="resources">Resources</h2>
-<ul>
-  <li>https://ourcodingclub.github.io/tutorials/topic-modelling-python/</li>
-  <li>https://www.dataquest.io/blog/tutorial-add-column-pandas-dataframe-based-on-if-else-condition/</li>
-  <li>https://jackmckew.dev/sentiment-analysis-text-cleaning-in-python-with-vader.html</li>
-  <li>https://discuss.streamlit.io/t/how-to-download-file-in-streamlit/1806</li>
-  <li>https://stackabuse.com/accessing-the-twitter-api-with-python</li>
-</ul>
-
-<h2 id="developer-contact">Developer contact</h2>
-<ul>
-  <li><a href="https://www.fullstaxx.com/">Domenic Fayad</a></li>
-  <li><a href="https://shannonhlo.github.io/">Shannon Lo</a></li>
-</ul>
 
   </div>
 
@@ -356,16 +224,16 @@
           
           <article class="work col col-6 col-d-12">
             <div class="work__content">
-              <a href="/work/2021-07-07-twitter-app/" class="work__image">
-                <img class="lazy" data-src="/images/twitter_app/twitter_app_logo.png" alt="Analyzing Twitter sentiment and topics with Python and Streamlit">
+              <a href="/work/multipage-scraping-amazon-python" class="work__image">
+                <img class="lazy" data-src="/images/amazon-web-scraper/amazon.jpg" alt="Multi-page scraping Amazon reviews in Python using requests, BeautifulSoup, and Splash">
               </a>
               <div class="work__info">
                 
-                <div class="work__category">Data Science & Analytics</div>
+                <div class="work__category">Python Basics</div>
                 
-                <h3 class="work__title"><a href="/work/2021-07-07-twitter-app/">Analyzing Twitter sentiment and topics with Python and Streamlit</a></h3>
+                <h3 class="work__title"><a href="/work/multipage-scraping-amazon-python">Multi-page scraping Amazon reviews in Python using requests, BeautifulSoup, and Splash</a></h3>
                 
-                <p class="work__description">Data science app built using Python and Streamlit to run a text and sentiment analysis on Twitter data in real-time.</p>
+                <p class="work__description">Learn how to build a multi-page python web-scraper for product reviews data</p>
                 
               </div>
             </div>
@@ -374,16 +242,16 @@
           
           <article class="work col col-6 col-d-12">
             <div class="work__content">
-              <a href="/work/2022-06-05-nhl-data-model/" class="work__image">
-                <img class="lazy" data-src="/images/datarena/hockey-analytics-meme.png" alt="Public NHL data modeling">
+              <a href="/work/nhl-draft-analyzer-app" class="work__image">
+                <img class="lazy" data-src="/images/twitter_app/nhl_app_logo2.png" alt="2021 NHL Expansion Draft analyzer">
               </a>
               <div class="work__info">
                 
-                <div class="work__category">Data Engineering</div>
+                <div class="work__category">Data Science & Analytics</div>
                 
-                <h3 class="work__title"><a href="/work/2022-06-05-nhl-data-model/">Public NHL data modeling</a></h3>
+                <h3 class="work__title"><a href="/work/nhl-draft-analyzer-app">2021 NHL Expansion Draft analyzer</a></h3>
                 
-                <p class="work__description">A data engineering journey towards modernizing NHL data</p>
+                <p class="work__description">Data science app using Python and Streamlit to visualize sentiment from NHL fans and insiders on Twitter.</p>
                 
               </div>
             </div>
