@@ -6,22 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Multi-page scraping Amazon reviews in Python using requests, BeautifulSoup, and Splash</title>
-  <meta name='description' content='Learn how to build a multi-page python web-scraper for product reviews data'>
+  <title>Public NHL data modeling</title>
+  <meta name='description' content='A data engineering journey towards modernizing NHL data'>
 
-  <link rel="canonical" href="http://localhost:4000/work/2021-05-23-multipage-scraping-amazon-python/">
+  <link rel="canonical" href="http://localhost:4000/work/nhl-data-model">
   <link rel="alternate" type="application/rss+xml" title="Domenic Fayad" href="/feed.xml">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Multi-page scraping Amazon reviews in Python using requests, BeautifulSoup, and Splash – Domenic Fayad">
-  <meta name="twitter:description" content="Learn how to build a multi-page python web-scraper for product reviews data">
-  <meta name="twitter:image:src" content="http://localhost:4000/images/amazon-web-scraper/amazon.jpg">
+  <meta name="twitter:title" content="Public NHL data modeling – Domenic Fayad">
+  <meta name="twitter:description" content="A data engineering journey towards modernizing NHL data">
+  <meta name="twitter:image:src" content="http://localhost:4000/images/datarena/hockey-analytics-meme.png">
 
   <!-- Facebook OpenGraph -->
-  <meta property="og:title" content="Multi-page scraping Amazon reviews in Python using requests, BeautifulSoup, and Splash – Domenic Fayad">
-  <meta property="og:description" content="Learn how to build a multi-page python web-scraper for product reviews data">
-  <meta property="og:image" content="http://localhost:4000/images/amazon-web-scraper/amazon.jpg">
+  <meta property="og:title" content="Public NHL data modeling – Domenic Fayad">
+  <meta property="og:description" content="A data engineering journey towards modernizing NHL data">
+  <meta property="og:image" content="http://localhost:4000/images/datarena/hockey-analytics-meme.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -131,7 +131,7 @@
       <div class="col col-5 col-d-12">
         <div class="work-head__left">
           <div class="work-head__image">
-            <img class="lazy" data-src="/images/amazon-web-scraper/amazon.jpg" alt="Multi-page scraping Amazon reviews in Python using requests, BeautifulSoup, and Splash">
+            <img class="lazy" data-src="/images/datarena/hockey-analytics-meme.png" alt="Public NHL data modeling">
           </div>
           
         </div>
@@ -141,15 +141,15 @@
       <div class="col col-7 col-d-12">
         <div class="work-head__right">
           
-          <div class="work-category">Python Basics</div>
+          <div class="work-category">Data Engineering</div>
           
-          <h1 class="page-title">Multi-page scraping Amazon reviews in Python using requests, BeautifulSoup, and Splash</h1>
+          <h1 class="page-title">Public NHL data modeling</h1>
           
-          <p class="page-description">Learn how to build a multi-page python web-scraper for product reviews data</p>
+          <p class="page-description">A data engineering journey towards modernizing NHL data</p>
           
           <ul class="work-meta list-reset">
             
-            <li class="work-meta__item"><strong>Date:</strong> <span>23 May 2021</span></li>
+            <li class="work-meta__item"><strong>Date:</strong> <span>05 Jun 2022</span></li>
             
             
             
@@ -160,13 +160,22 @@
                   <a href="/tags/?tag=all-projects">all-projects</a>
                   , 
                 
+                  <a href="/tags/?tag=data-engineering">data-engineering</a>
+                  , 
+                
                   <a href="/tags/?tag=python">python</a>
                   , 
                 
-                  <a href="/tags/?tag=tutorial">tutorial</a>
+                  <a href="/tags/?tag=singer">singer</a>
                   , 
                 
-                  <a href="/tags/?tag=web-scraping">web-scraping</a>
+                  <a href="/tags/?tag=meltano">meltano</a>
+                  , 
+                
+                  <a href="/tags/?tag=bigquery">bigquery</a>
+                  , 
+                
+                  <a href="/tags/?tag=dbt">dbt</a>
                   
                 
               </span>
@@ -183,164 +192,87 @@
 <div class="container animate">
 
   <div class="page">
-    <h2 id="multi-page-web-scraping">Multi-page web-scraping</h2>
+    <p>This is first of a series of posts that delves into exploring, organizing, and modeling on public Hockey (NHL) data. I am one of the two developers of this work alongside my colleague <a href="https://github.com/gavh3">Gavin He</a>. I will occasionally cross-post the cool work we do within our “organization” (called <a href="https://the-data-base.github.io/">the-data-base</a>) here on fullstaxx.</p>
 
-<p>In this post, I’m going to show you how to build a multi-page web-scraper in Python.</p>
+<blockquote>
+  <p>A modern application of data-engineering to enable data science on public Hockey (NHL) data for the purposes of learning &amp; development</p>
+</blockquote>
 
-<p>We will be scraping Amazon product reviews data, but the focus will be on looping through multiple pages.</p>
-
-<p>If you’re looking for a basic introduction to web-scraping in Python, check out the <a href="(2021-05-12-scraping-amazon-python.md)">single page Python web-scraper for Amazon product reviews data</a> from my last post.</p>
-
-<p>Didn’t read that post? All good, here is the  TL;DR (too long; didn’t read) version:</p>
+<h2 id="table-of-contents">Table of contents</h2>
 <ul>
-  <li>Scraped Amazon product reviews data for some Sony Headphones I recently bought</li>
-  <li>Introduction to using Splash and Docker for web-scraping</li>
-  <li>Step-by-step implementation of popular web-scraping Python libraries: BeautifulSoup, requests, and Splash.</li>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#architecture">Architecture</a></li>
+  <li><a href="#setup">Setup</a></li>
+  <li><a href="#resources">Resources</a></li>
+  <li><a href="#developer-contact">Developer contact</a></li>
 </ul>
 
-<h2 id="getting-started">Getting started</h2>
-<p>Here’s a snippet of code that we can start with:</p>
+<h2 id="introduction">Introduction</h2>
 
-<figure class="highlight"><pre><code class="language-py" data-lang="py"><span class="c1">#-----------------------------------------
-# Single-page python web-scraper for Amazon product reviews
-#-----------------------------------------
-</span>
-<span class="c1"># Import libraries
-</span><span class="kn">import</span> <span class="n">requests</span>
-<span class="kn">from</span> <span class="n">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
-<span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
-
-<span class="c1"># URL setup and HTML request
-# Note - run Option 2 if you haven't setup Docker &amp; Splash
-</span><span class="n">url</span> <span class="o">=</span> <span class="sh">'</span><span class="s">https://www.amazon.ca/Sony-WF-1000XM3-Industry-Canceling-Wireless/product-reviews/B07T81554H/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&amp;reviewerType=all_reviews</span><span class="sh">'</span>
-<span class="c1"># Option 1
-</span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">http://localhost:8050/render.html</span><span class="sh">'</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="sh">'</span><span class="s">url</span><span class="sh">'</span><span class="p">:</span> <span class="n">url</span><span class="p">,</span> <span class="sh">'</span><span class="s">wait</span><span class="sh">'</span> <span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
-<span class="c1"># Option 2
-# r = requests.get(url)
-</span>
-<span class="c1"># Parsing the HTML content
-</span><span class="n">soup</span> <span class="o">=</span> <span class="nc">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">text</span><span class="p">,</span> <span class="sh">'</span><span class="s">html.parser</span><span class="sh">'</span><span class="p">)</span>
-
-<span class="c1"># Getting desired data from our parsed soup
-</span><span class="n">reviews</span> <span class="o">=</span> <span class="n">soup</span><span class="p">.</span><span class="nf">find_all</span><span class="p">(</span><span class="sh">'</span><span class="s">div</span><span class="sh">'</span><span class="p">,</span> <span class="p">{</span><span class="sh">'</span><span class="s">data-hook</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">review</span><span class="sh">'</span><span class="p">})</span>
-
-<span class="c1"># Initialize list
-</span><span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="c1"># For every item in review, scrape the following and store as a list called review
-</span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">reviews</span><span class="p">:</span>
-    <span class="n">review</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="sh">'</span><span class="s">product</span><span class="sh">'</span><span class="p">:</span> <span class="n">soup</span><span class="p">.</span><span class="n">title</span><span class="p">.</span><span class="n">text</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="sh">'</span><span class="s">Amazon.ca:Customer reviews: </span><span class="sh">'</span><span class="p">,</span> <span class="sh">''</span><span class="p">).</span><span class="nf">strip</span><span class="p">(),</span> 
-    <span class="sh">'</span><span class="s">title</span><span class="sh">'</span><span class="p">:</span> <span class="n">item</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="sh">'</span><span class="s">a</span><span class="sh">'</span><span class="p">,</span> <span class="p">{</span><span class="sh">'</span><span class="s">data-hook</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">review-title</span><span class="sh">'</span><span class="p">}).</span><span class="n">text</span><span class="p">.</span><span class="nf">strip</span><span class="p">(),</span>
-    <span class="sh">'</span><span class="s">date</span><span class="sh">'</span><span class="p">:</span> <span class="n">item</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="sh">'</span><span class="s">span</span><span class="sh">'</span><span class="p">,</span> <span class="p">{</span><span class="sh">'</span><span class="s">data-hook</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">review-date</span><span class="sh">'</span><span class="p">}).</span><span class="n">text</span><span class="p">.</span><span class="nf">strip</span><span class="p">(),</span>
-    <span class="sh">'</span><span class="s">rating</span><span class="sh">'</span><span class="p">:</span> <span class="nf">float</span><span class="p">(</span><span class="n">item</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="sh">'</span><span class="s">i</span><span class="sh">'</span><span class="p">,</span> <span class="p">{</span><span class="sh">'</span><span class="s">data-hook</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">review-star-rating</span><span class="sh">'</span><span class="p">}).</span><span class="n">text</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="sh">'</span><span class="s">out of 5 stars</span><span class="sh">'</span><span class="p">,</span> <span class="sh">''</span><span class="p">).</span><span class="nf">strip</span><span class="p">()),</span>
-    <span class="sh">'</span><span class="s">text</span><span class="sh">'</span><span class="p">:</span> <span class="n">item</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="sh">'</span><span class="s">span</span><span class="sh">'</span><span class="p">,</span> <span class="p">{</span><span class="sh">'</span><span class="s">data-hook</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">review-body</span><span class="sh">'</span><span class="p">}).</span><span class="n">text</span><span class="p">.</span><span class="nf">strip</span><span class="p">(),</span>
-    <span class="p">}</span>
-    <span class="n">data</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">review</span><span class="p">)</span>  
-
-<span class="c1"># Save results to a dataframe, then export as CSV
-</span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nc">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">df</span><span class="p">.</span><span class="nf">to_csv</span><span class="p">(</span><span class="sa">r</span><span class="sh">'</span><span class="s">sony-headphones.csv</span><span class="sh">'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span></code></pre></figure>
-
-<p>Running this will fetch us the <code class="language-plaintext highlighter-rouge">product</code>, <code class="language-plaintext highlighter-rouge">title</code>, <code class="language-plaintext highlighter-rouge">date</code>, <code class="language-plaintext highlighter-rouge">rating</code>, and the actual <code class="language-plaintext highlighter-rouge">text</code> for each review made on Amazon for <a href="https://www.amazon.ca/Sony-WF-1000XM3-Industry-Canceling-Wireless/product-reviews/B07T81554H/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&amp;reviewerType=all_reviews">these Sony Headphones</a>.</p>
-
-<h2 id="code-refactoring">Code refactoring</h2>
-
-<p>Before we mess around with the code to loop through multiple pages, its a good practice to refactor a little. We will introduce few functions to help with performance and readability.</p>
-
-<p>Let’s start with converting our URL setup &amp; HTML request to a function.</p>
-
-<figure class="highlight"><pre><code class="language-py" data-lang="py"><span class="c1"># Function 1: get and return parsed HTML
-</span><span class="k">def</span> <span class="nf">get_soup</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
-    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">http://localhost:8050/render.html</span><span class="sh">'</span><span class="p">,</span> 
-    <span class="c1"># Run this instead if you haven't setup Splash &amp; Docker
-</span>    <span class="c1"># r = requests.get(url)
-</span>    <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">url</span><span class="sh">'</span><span class="p">:</span> <span class="n">url</span><span class="p">,</span> <span class="sh">'</span><span class="s">wait</span><span class="sh">'</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
-    <span class="n">soup</span> <span class="o">=</span> <span class="nc">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">text</span><span class="p">,</span> <span class="sh">'</span><span class="s">html.parser</span><span class="sh">'</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">soup</span></code></pre></figure>
-
-<p>This function takes in URL as an input, and spits out an HTML-parsed version of the HTTP request we made. Let’s call this our <code class="language-plaintext highlighter-rouge">soup</code>.</p>
-
-<p>Next, we need to tell Python what data we want to look for in the <code class="language-plaintext highlighter-rouge">soup</code>.</p>
-
-<figure class="highlight"><pre><code class="language-py" data-lang="py"><span class="c1"># Initialize list to store reviews data later on
-</span><span class="n">reviewlist</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="c1"># Function 2: look for web-tags in our soup, then append our data to reviewList
-</span><span class="k">def</span> <span class="nf">get_reviews</span><span class="p">(</span><span class="n">soup</span><span class="p">):</span>
-    <span class="n">reviews</span> <span class="o">=</span> <span class="n">soup</span><span class="p">.</span><span class="nf">find_all</span><span class="p">(</span><span class="sh">'</span><span class="s">div</span><span class="sh">'</span><span class="p">,</span> <span class="p">{</span><span class="sh">'</span><span class="s">data-hook</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">review</span><span class="sh">'</span><span class="p">})</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">reviews</span><span class="p">:</span>
-            <span class="n">review</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="sh">'</span><span class="s">product</span><span class="sh">'</span><span class="p">:</span> <span class="n">soup</span><span class="p">.</span><span class="n">title</span><span class="p">.</span><span class="n">text</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="sh">'</span><span class="s">Amazon.ca:Customer reviews: </span><span class="sh">'</span><span class="p">,</span> <span class="sh">''</span><span class="p">).</span><span class="nf">strip</span><span class="p">(),</span> 
-            <span class="sh">'</span><span class="s">date</span><span class="sh">'</span><span class="p">:</span> <span class="n">item</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="sh">'</span><span class="s">span</span><span class="sh">'</span><span class="p">,</span> <span class="p">{</span><span class="sh">'</span><span class="s">data-hook</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">review-date</span><span class="sh">'</span><span class="p">}).</span><span class="n">text</span><span class="p">.</span><span class="nf">strip</span><span class="p">(),</span>
-            <span class="sh">'</span><span class="s">title</span><span class="sh">'</span><span class="p">:</span> <span class="n">item</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="sh">'</span><span class="s">a</span><span class="sh">'</span><span class="p">,</span> <span class="p">{</span><span class="sh">'</span><span class="s">data-hook</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">review-title</span><span class="sh">'</span><span class="p">}).</span><span class="n">text</span><span class="p">.</span><span class="nf">strip</span><span class="p">(),</span>
-            <span class="sh">'</span><span class="s">rating</span><span class="sh">'</span><span class="p">:</span>  <span class="nf">float</span><span class="p">(</span><span class="n">item</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="sh">'</span><span class="s">i</span><span class="sh">'</span><span class="p">,</span> <span class="p">{</span><span class="sh">'</span><span class="s">data-hook</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">review-star-rating</span><span class="sh">'</span><span class="p">}).</span><span class="n">text</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="sh">'</span><span class="s">out of 5 stars</span><span class="sh">'</span><span class="p">,</span> <span class="sh">''</span><span class="p">).</span><span class="nf">strip</span><span class="p">()),</span>
-            <span class="sh">'</span><span class="s">body</span><span class="sh">'</span><span class="p">:</span> <span class="n">item</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="sh">'</span><span class="s">span</span><span class="sh">'</span><span class="p">,</span> <span class="p">{</span><span class="sh">'</span><span class="s">data-hook</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">review-body</span><span class="sh">'</span><span class="p">}).</span><span class="n">text</span><span class="p">.</span><span class="nf">strip</span><span class="p">(),</span>
-            <span class="p">}</span>
-            <span class="n">reviewlist</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">review</span><span class="p">)</span>
-    <span class="k">except</span><span class="p">:</span>
-        <span class="k">pass</span></code></pre></figure>
-
-<p>Here, we <code class="language-plaintext highlighter-rouge">try</code> to scrape for those reviews in our <code class="language-plaintext highlighter-rouge">soup</code> that are tagged in the way we’ve specified, then append to our list.</p>
-
-<p>If for whatever reason we cannot find what we are looking for, then we are asking Python to <code class="language-plaintext highlighter-rouge">pass</code> to the next review.</p>
-
-<h2 id="looping-through-multiple-pages">Looping through multiple pages</h2>
-
-<p>One of the easiest methods to scrape multiple pages is to modify the base URL to accept a page variable that increments as needed.</p>
-
-<p>Try for yourself! See how the URL changes as you go through multiple pages.</p>
-
-<p>For Amazon product reviews, the only thing that seems to change is the number indicating which page it is.</p>
-
-<figure class="highlight"><pre><code class="language-py" data-lang="py"><span class="c1"># Method: loop through a range of values, where x = a sequenced page number
-</span><span class="sa">f</span><span class="sh">'</span><span class="s">https://www.amazon.ca/Sony-WF-1000XM3-Industry-Canceling-Wireless/product-reviews/B07T81554H/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&amp;reviewerType=all_reviews&amp;pageNumber=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="sh">'</span></code></pre></figure>
-
-<p>Okay, now let’s put this to work in a function:</p>
-
-<figure class="highlight"><pre><code class="language-py" data-lang="py"><span class="c1"># Function 3: loop through 1:x many pages, or until the css selector found only on the last page is found (when the next page button is greyed)
-</span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">):</span>
-    <span class="n">soup</span> <span class="o">=</span> <span class="nf">get_soup</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">https://www.amazon.ca/Sony-WF-1000XM3-Industry-Canceling-Wireless/product-reviews/B07T81554H/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&amp;reviewerType=all_reviews&amp;pageNumber=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
-    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Getting page: </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
-    <span class="nf">get_reviews</span><span class="p">(</span><span class="n">soup</span><span class="p">)</span>
-    <span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">reviewlist</span><span class="p">))</span></code></pre></figure>
-
-<p>We can even add in a a stop condition. For this one, we can tell Python to look for a greyed out “Next Page” button. To identify this element, use the element inspector.</p>
-
-<p>Add this to the bottom of the function above.</p>
-
-<figure class="highlight"><pre><code class="language-py" data-lang="py"><span class="c1"># Continue to loop through range so long as greyed out button isn't detected
-</span><span class="k">if</span> <span class="ow">not</span> <span class="n">soup</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="sh">'</span><span class="s">li</span><span class="sh">'</span><span class="p">,</span> <span class="p">{</span><span class="sh">'</span><span class="s">class</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">a-disabled a-last</span><span class="sh">'</span><span class="p">}):</span>
-        <span class="k">pass</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">break</span></code></pre></figure>
-
-<h2 id="putting-it-all-together">Putting it all together</h2>
-
-<p>You can find the put-together code here in my <a href="https://github.com/dmf95/scrape-amazon-reviews">amazon web scraping github repo</a>. Look for the file called <code class="language-plaintext highlighter-rouge">2_amz_review_scraper.py</code>.</p>
-
-<p>You’ll notice that I used Splash &amp; Docker to render and return the page. I found that I needed it to run my code.</p>
-
-<p>Incase you want to try running the scraper without Splash &amp; Docker, simply change <code class="language-plaintext highlighter-rouge">Line 9</code> to the following:</p>
-
-<figure class="highlight"><pre><code class="language-py" data-lang="py"><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span></code></pre></figure>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>To review, here is what we just did:</p>
+<p>The motivation behind this project was simple: make public hockey data available using modern technologies for the purposes of data-science &amp; data-visualization. We wanted to be able to answer questions like…</p>
 <ul>
-  <li>Modularized and refactored our single-page amazon product reviews web-scraper</li>
-  <li>Added a for loop that returns Amazon product reviews for the range we specified</li>
-  <li>Added a stop condition that looks for a greyed-out “Next Page” button</li>
-  <li>Added printed comments to help us follow the code as it scrapes</li>
-  <li>Returned a CSV file with the data we specified called <code class="language-plaintext highlighter-rouge">sony-headphones.csv</code></li>
+  <li>Which players are most likely to have a breakout season next year?</li>
+  <li>Which draft prospects are most likely to succeed in the NHL?</li>
+  <li>How many goals should we expect from elite players like Connor McDavid or Auston Matthews next season?</li>
+  <li>Where on the ice are individual players most efficient with their shooting?</li>
 </ul>
 
-<p>Once again, credit to <a href="https://www.youtube.com/channel/UC8tgRQ7DOzAbn9L7zDL8mLg">John Watson Rooney</a> who provided the <a href="https://github.com/jhnwr/scrape-amazon-reviews">methodology in github</a> from which this tutorial is adapted from.  I would encourage you to check out his content if web-scraping in Python interests you.</p>
+<h2 id="architecture">Architecture</h2>
 
-<p>There will be one last post on this topic, this time taking the data that we’ve got and running a basic sentiment analysis in Python.</p>
+<p>In order to get to this state of-course, a lot of data-engineering was necessary. Below is a visual representation of the project architecture.</p>
 
+<p><img src="/images/datarena/hockey-project-architecture.png" alt="Miro project architecture" /></p>
+
+<h3 id="data-extraction">Data extraction</h3>
+
+<p>Currently, we only have a single source of data: the NHL Stats API. The Github repo that we built to extract the data is called <code class="language-plaintext highlighter-rouge">tap-nhl</code>. It is a Singer tap for the NHL Stats API.</p>
+
+<p>Built with the <a href="https://sdk.meltano.com">Meltano Tap SDK</a> for Singer Taps.</p>
+
+<p>Below is a flow diagram explaining how it works:</p>
+
+<p><img src="/images/datarena/hockey-analytics-mermaid.png" alt="Mermaid Plot" /></p>
+
+<p>Resources</p>
+<ul>
+  <li>Repo: <a href="https://github.com/bicks-bapa-roob/dbt-nhl-breakouts">tap-nhl</a></li>
+</ul>
+
+<h3 id="data-transformation--loading">Data transformation &amp; loading</h3>
+
+<p>All of this work is contained within a Github repo called <code class="language-plaintext highlighter-rouge">dbt-nhl-breakouts</code> and uses dbt to model our raw data. It contains the source code used to transform raw nhl data from the NHL Stats API into analysis-ready models.</p>
+
+<p>In other words, this is where the SQL magic happens using dbt. Ultimately, this work converts confusing raw data into:</p>
+<ul>
+  <li>Data analyst/scientist friendly datasets all within one data warehouse (BigQuery)</li>
+  <li>Well-documented tables, field definitions, and queries</li>
+  <li>Reliable data that is tested and validated before ever making it into production</li>
+</ul>
+
+<p>Resources</p>
+<ul>
+  <li>Repo: <a href="https://github.com/bicks-bapa-roob/dbt-nhl-breakouts">dbt-nhl-breakouts</a></li>
+  <li>Documentation: <a href="https://bicks-bapa-roob.github.io/dbt-nhl-breakouts/#!/overview">dbt generated documentation</a></li>
+</ul>
+
+<h3 id="data-science">Data science</h3>
+
+<p>Consider this section separate from the rest. Each question that we decide to answer of our newly modeled data will live in this bucket. For example, one of the projects that spawned from this was the <a href="https://github.com/bicks-bapa-roob/nhl-breakouts">nhl-breakouts project</a></p>
+
+<h2 id="resources">Resources</h2>
+<ul>
+  <li>Learn more about dbt <a href="https://docs.getdbt.com/docs/introduction">in the docs</a></li>
+  <li>Check out <a href="https://discourse.getdbt.com/">Discourse</a> for commonly asked questions and answers</li>
+  <li>Join the <a href="https://community.getdbt.com/">chat</a> on Slack for live discussions and support</li>
+  <li>Find <a href="https://events.getdbt.com">dbt events</a> near you</li>
+  <li>Check out <a href="https://blog.getdbt.com/">the blog</a> for the latest news on dbt’s development and best practices</li>
+</ul>
+
+<h2 id="developer-contact">Developer contact</h2>
+<ul>
+  <li><a href="https://github.com/dmf95">@dmf95</a></li>
+  <li><a href="https://github.com/gavh3">@gavh3</a></li>
+</ul>
 
   </div>
 
@@ -358,16 +290,16 @@
           
           <article class="work col col-6 col-d-12">
             <div class="work__content">
-              <a href="/work/2021-05-12-scraping-amazon-python/" class="work__image">
-                <img class="lazy" data-src="/images/amazon-web-scraper/amazon.jpg" alt="Scraping single-page amazon reviews in Python using requests, BeautifulSoup, and Splash">
+              <a href="/work/nhl-draft-analyzer-app" class="work__image">
+                <img class="lazy" data-src="/images/twitter_app/nhl_app_logo2.png" alt="2021 NHL Expansion Draft analyzer">
               </a>
               <div class="work__info">
                 
-                <div class="work__category">Python Basics</div>
+                <div class="work__category">Data Science & Analytics</div>
                 
-                <h3 class="work__title"><a href="/work/2021-05-12-scraping-amazon-python/">Scraping single-page amazon reviews in Python using requests, BeautifulSoup, and Splash</a></h3>
+                <h3 class="work__title"><a href="/work/nhl-draft-analyzer-app">2021 NHL Expansion Draft analyzer</a></h3>
                 
-                <p class="work__description">Learn how to build a single-page python web-scraper for product reviews data</p>
+                <p class="work__description">Data science app using Python and Streamlit to visualize sentiment from NHL fans and insiders on Twitter.</p>
                 
               </div>
             </div>
@@ -376,16 +308,16 @@
           
           <article class="work col col-6 col-d-12">
             <div class="work__content">
-              <a href="/work/2021-07-07-twitter-app/" class="work__image">
-                <img class="lazy" data-src="/images/twitter_app/twitter_app_logo.png" alt="Analyzing Twitter sentiment and topics with Python and Streamlit">
+              <a href="/work/datarena" class="work__image">
+                <img class="lazy" data-src="/images/datarena/datarena_logo.jpg" alt="datarena.io">
               </a>
               <div class="work__info">
                 
                 <div class="work__category">Data Science & Analytics</div>
                 
-                <h3 class="work__title"><a href="/work/2021-07-07-twitter-app/">Analyzing Twitter sentiment and topics with Python and Streamlit</a></h3>
+                <h3 class="work__title"><a href="/work/datarena">datarena.io</a></h3>
                 
-                <p class="work__description">Data science app built using Python and Streamlit to run a text and sentiment analysis on Twitter data in real-time.</p>
+                <p class="work__description">Advancing Public Hockey Analytics</p>
                 
               </div>
             </div>
