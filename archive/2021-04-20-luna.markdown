@@ -1,0 +1,179 @@
+---
+layout: post
+title: Luna
+description: Helping people who experience stress & anxiety sleep better by focusing on their habits and well-being.
+date: 2020-01-15
+image: '/images/luna-cover.jpg'
+image_caption: 'Photo of Luna app'
+tags: [side project]
+---
+
+## Table of Contents
+1. [Empathize](#empathize)
+2. [Define](#define)
+3. [Ideate](#ideate)
+4. [Prototype and test](#prototype-and-test)
+5. [Reflect](#reflect)
+
+---
+
+> Luna is an idea for a native iOS app that helps people who experience stress and anxiety sleep better at night by improving their mental well being. 
+
+**Team:** Raymond Chou <br>
+**Tools:** Figma, InVision, Otter.ai, Google Drive <br>
+**Timeline:** 3 months
+
+## Why Luna?
+Sleep-deprived and filled with copious amounts of coffee ☕ - that’s how Raymond and I finished our intense UX boot camp. While TAing for the following cohort, we wanted to keep our UX skills sharp and decided to tackle a common interest in the problem space of sleep deprivation. We were curious to learn why we and so many others don’t get the recommended 8 hours of sleep each night. Was there an opportunity for design intervention?
+
+We set some constraints and goals early on:
+- Limited to free research methods and resources
+- Hi-fi prototype with 12-20 screens of up to two task flows
+- Native iOS app
+
+***
+
+## Empathize 
+### 1 in 3 adults get less than 7 hours of sleep each night (Gov Canada)
+
+At the time of writing this, the sleep aid market is set to reach up to 114B USD in 2025⁵. A study done by the Government of Canada found that half of adults have trouble falling and staying asleep at night. The main factors contributing to this are chronic stress, sedentary lifestyles, and poor mental health².
+
+​Studies have found that maintaining good daily habits can result in successful sleep. Some habits include regular wake-up and bed-times and practicing mindfulness and stress-reducing techniques². 
+
+### Apps like Headspace, Sleep Sounds, Wysa, and Calm would be our direct competitors
+With a large sleep aid market, we were interested in learning more about other sleep apps and the potential for a new and differentiated entrant.
+
+Studies done specifically on HeadSpace and Calm found that
+- College students that regularly used the Calm app experienced reduced stress and boosted mindfulness⁴
+- Users experienced a 14–28% decrease in stress after 10 days of using HeadSpace⁴
+- HeadSpace improved user focus by 27%⁴
+
+![Competitors]({{site.baseurl}}/images/luna-competitors.jpg)
+*About Luna direct competitors*
+
+### Interviewees commonly mentioned stress and anxiety as culprits for sleep deprivation
+We conducted 7 interviews, asking open-ended questions to learn about people’s sleep, bedtime habits, and experiences with sleep deprivation. We interviewed people who have experienced sleep deprivation, targeting post-secondary students and working professionals. From the research, we found that stress and anxiety were common feelings that people experienced before bed. Other insights included phone usage before bed,  using meditation as a remedy, people caring about their sleep quality, and feeling a lack of incentive to follow good sleep habits.
+
+![Themes]({{site.baseurl}}/images/luna-themes.jpg)
+*Interview themes*
+
+> HMW help people experiencing stress and anxiety improve their mental wellbeing so that they can sleep better at night?
+
+## Define
+
+### Who are we designing for?
+We created Alexandria to encompass the pain points, motivations, and behaviors found from our interviews. She’s a stressed student that is always up late studying and only gets 5-6 hours of sleep each night as a consequence. She wants to get into a routine of sleeping earlier but often finds it difficult to calm their thoughts. On top of that, her phone is a distraction before bed with a constant fear of missing out.
+
+![Persona]({{site.baseurl}}/images/luna-persona.jpg)
+*Persona*
+
+### As a student who is often anxious, I want access to a library of sleep stories, sounds, and audios to listen to before bedtime so that I can calm myself down and fall asleep more easily
+Brainstorming user stories helped us determine potential solutions for Alexandria. We then grouped the stories into epics, with our core epic being to play sleep audios as this would best support our design challenge.
+
+Based on our research, we created a story about how Alexandria might discover and use Luna for the first time.
+
+![Scenario Map]({{site.baseurl}}/images/luna-scenario.jpg)
+*Scenario map*
+
+### Designed a golden path for how Alexandria might accomplish her goal
+Here, we brainstormed the screens, flow, call-to-action buttons, and system decisions. The diagram below did end up changing as a result of user testing results, but this was the initial concept of Luna.
+
+![Task Flow]({{site.baseurl}}/images/luna-task.jpg)
+*Task flow diagram*
+
+## Ideate
+### Inspiration
+Raymond and I looked at competitor and other apps for inspiration. We set up a collaborative board and added categories for various screens and elements with the goal of creating an experience that users are familiar with.
+
+![Inspiration]({{site.baseurl}}/images/luna-inspo.jpg)
+*Inspiration*
+
+### Sketch
+We also sketched multiple variations of each screen from our task flow. We used dot voting to choose which ideas we would digitize. Check out some of our very rough sketches below.
+
+![Skecth]({{site.baseurl}}/images/luna-sketch.jpg)
+*Sketches*
+### Moodboard
+When brainstorming how we wanted Luna to look and feel, we came up with the following mood board that highlights key words such as "calm", "relaxing", "warm", and "welcoming".
+
+![Mood]({{site.baseurl}}/images/luna-mood.jpg)
+*Moodboard*
+### Typography
+Conforming with Apple’s Human Interface Guidelines, we used the typefaces SF Pro Text and SF Pro Display throughout the app.
+
+![Type]({{site.baseurl}}/images/luna-type.jpg)
+*Type*
+### Colour
+We extracted colours from our mood board to achieve a look and feel that was fitting for Luna.
+
+Blue is the primary colouraand is known for its stress-reducing properties. The palette is mostly analogous with a mixture of blues and purples. A yellow was added for the Luna moon and to help evoke feelings of warmth and optimism. The primary colours used are darker tones to help users reduce eye strain before bed. We wanted Luna to be accessible and ensured with our colour choices met WCAG AA standards throughout the app.
+
+![Colour]({{site.baseurl}}/images/luna-colour.jpg)
+*Colour*
+
+### Logo
+Luna, another word for the moon, was chosen as the app name as we wanted something memorable and that users could easily find on their phones before going to bed. Other app name contenders were Zenny, CloudScape, and Medi. Dot voting led us to pick Luna.
+
+Comfortaa, a rounded geometric sans-serif font, was chosen as it evokes comfort and coziness. The Luna moon used in place of the “u” was added to complete the wordmark and give it a unique look.
+
+![Logo]({{site.baseurl}}/images/luna-logo.jpg)
+*Logo*
+
+## Prototype & test
+### High fidelity
+It took multiple iterations to achieve the desired look and feel of Luna.
+
+We conducted usability test sessions for the first two iterations of Luna. We fixed usability issues in our greyscale prototypes, whereas the hi-fi focused on cosmetic issues and UI.
+
+![Low Fidelity]({{site.baseurl}}/images/luna-v1.jpg)
+*Low fidelity (V1) screens*
+
+![High Fidelity]({{site.baseurl}}/images/luna-hifi.jpg)
+*High fidelity (final) screens*
+
+### Tasks evaluated
+
+1. Find the part of the app that allows user to select a period where they won’t use their phone
+2. Select a gentle waves sleep track and choose 45 minute timer
+3. Post-test updates
+
+### Design updates
+
+![Home]({{site.baseurl}}/images/luna-home1.jpg)
+*Home design update - iteration 1*
+
+![Home]({{site.baseurl}}/images/luna-home2.jpg)
+*Home design update - iteration 2*
+
+![Onboarding]({{site.baseurl}}/images/luna-onboarding.jpg)
+*Onboarding - iteration 2*
+
+![Profile]({{site.baseurl}}/images/luna-profile.jpg)
+*Profile - iteration 1*
+
+![Sleep cycle]({{site.baseurl}}/images/luna-sleepcycle.jpg)
+*Sleep cycle - iteration 2*
+## Result
+After multiple rounds of iterating and testing, we felt that we finished what we had set out to accomplish with this project. Watch the prototype video of Luna below, or try it out yourself on Figma.
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FhvD3ZYwrSG47jMnR1VjRBv%2FPortfolio-Website%3Ftype%3Ddesign%26node-id%3D1851-4013%26scaling%3Dcontain%26page-id%3D1843%253A112%26starting-point-node-id%3D1851%253A4013" allowfullscreen></iframe>
+
+***
+
+## Reflect
+**Start with a paper prototype or card sort**
+During usability testing, we learned that people didn't understand why a sleep app had a digital health feature. Users also questioned what digital health was and thought that the goal-setting workflow was an alarm clock. In hindsight, starting with a paper prototype or card sort could have been a fast and easy way to learn about this problem before designing.
+
+​**Collaborating with a partner on a project is extremely rewarding.**
+I had so much fun jamming on ideas with Raymond over the last 12 weeks. It was an excellent learning experience for us while we TAd together. 
+
+If you want to learn more about this project, please feel free to [get in touch](https://vanessaungerer97@gmail.com)!
+
+*** 
+
+Works Cited
+1. Calm (2020). About. [Link to site](https://www.calm.com/blog/about?gclid=CjwKCAiAi_D_BRApEiwASslbJ36PrR3a1eIAluYnsCbrQP-dLBdj_tTL4zAOPvClt-w8MvqEwjGUTxoCH9kQAvD_BwE)
+2. Government of Canada (2020). Are Canadian adults getting enough sleep? [Link to article](https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-adults-getting-enough-sleep-infographic.html)
+3. Headspace (2020). About Headspace. [Link to site](https://www.headspace.com/about-us)
+4. Healthline (Sept 23, 2020). Headspace vs. Calm: How Do These Meditation Apps Compare? [Link to site](https://www.healthline.com/health/headspace-vs-calm)
+5. PR Newswire (May 15, 2020). Sleep Aids Market Worth $114.15 Billion by 2025: Exclusive Report by Infinium Global Research. [Link to report](https://www.prnewswire.com/news-releases/sleep-aids-market-worth-114-15-billion-by-2025-exclusive-report-by-infinium-global-research-301060012.html)

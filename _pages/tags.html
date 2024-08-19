@@ -1,0 +1,97 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+---
+{% assign all_tags = "" %}
+
+<!-- Capture tags from _posts -->
+{% for tag in site.tags %}
+  {% assign all_tags = all_tags | append: tag[0] | append: "," %}
+{% endfor %}
+
+<!-- Capture tags from _works -->
+{% for work in site.works %}
+  {% for tag in work.tags %}
+    {% unless all_tags contains tag %}
+      {% assign all_tags = all_tags | append: tag | append: "," %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+
+<!-- Remove the last comma and split the tags into an array -->
+{% assign tag_words = all_tags | strip | split: ',' | uniq | sort %}
+
+<!-- begin tags -->
+<section class="tags">
+  {% for tag in tag_words %}
+    <div class="tags__inner is-hidden" id="{{ tag | cgi_escape }}">
+      <div class="container">
+        <div class="tag__info">
+          <h1 class="tag__name">{{ tag }}
+            <span class="tag__counter">
+              {% assign count = 0 %}
+              {% if site.tags[tag] %}
+                {% assign count = count | plus: site.tags[tag].size %}
+              {% endif %}
+              {% for work in site.works %}
+                {% if work.tags contains tag %}
+                  {% assign count = count | plus: 1 %}
+                {% endif %}
+              {% endfor %}
+              {{ count }}
+            </span>
+          </h1>
+          <div class="tag__link">Check out the <a href="{{ '/blog' | relative_url }}">latest posts</a></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col col-12">
+            <div class="section-small">
+              <div class="section__inner grid">
+                <!-- Posts with this tag -->
+                {% if site.tags[tag] %}
+                  {% for post in site.tags[tag] %}
+                    {% include article.html %}
+                  {% endfor %}
+                {% endif %}
+
+                <!-- Works with this tag -->
+                {% for work in site.works %}
+                  {% if work.tags contains tag %}
+                    <article class="work col col-4 col-d-6 col-t-12">
+                      <div class="work__content">
+                        <a href="{{ work.url }}" class="work__image">
+                          <img class="lazy" data-src="{{ work.image }}" alt="{{ work.title }}">
+                        </a>
+                        <div class="work__info">
+                          <h3 class="work__title"><a href="{{ work.url }}">{{ work.title }}</a></h3>
+                          {% if work.description %}
+                          <p class="work__description">{{ work.description }}</p>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </article>
+                  {% endif %}
+                {% endfor %}
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  {% endfor %}
+</section>
+<!-- end tags -->
+
+<script>
+  var tag_name = window.location.search.replace("?tag=", "#");
+  if (tag_name) {
+      var el = document.querySelector(tag_name);
+      el.classList.remove("is-hidden");
+    }
+</script>

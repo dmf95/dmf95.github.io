@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Domenic Fayad</title>
+        <description>A portfolio &amp; blog dedicated to my experience as a full-stack Data Scientist</description>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 18 Aug 2024 17:06:10 -0700</pubDate>
+        <lastBuildDate>Sun, 18 Aug 2024 17:06:10 -0700</lastBuildDate>
+        <generator>Jekyll v4.3.2</generator>
+        
+            <item>
+                <title>The data science swiss-army knife</title>
+                <description>&lt;h2 id=&quot;full-stack-analytics-is-that-made-up&quot;&gt;Full-stack analytics… is that made up?&lt;/h2&gt;
+&lt;p&gt;Maybe?&lt;/p&gt;
+
+&lt;p&gt;Though, I am &lt;strong&gt;not&lt;/strong&gt; the originator! The first time I heard of the term I was at an Adobe conference, where I came across &lt;a href=&quot;https://www.fullstackanalyst.io/the-full-stack-analyst/&quot;&gt;Frederik Werner’s Full Stack Analyst Blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It is a &lt;del&gt;generous&lt;/del&gt;  title that I have adopted in recent times to help communicate all of the things that I can do with data.&lt;/p&gt;
+
+&lt;p&gt;Some days, it means that I am a &lt;strong&gt;Digital Analyst&lt;/strong&gt; pitching the value of analyzing customer fallthrough and retention in Adobe Analytics to my Product Manager.&lt;/p&gt;
+
+&lt;p&gt;Other days, it means that I am a &lt;strong&gt;Data Analyst&lt;/strong&gt; writing SQL to query POS transaction data from the on-premises data warehouse, and running an affinity analysis in R.&lt;/p&gt;
+
+&lt;p&gt;Still, on other days, I am a &lt;strong&gt;Data Engineer&lt;/strong&gt; &amp;amp; &lt;strong&gt;BI Developer&lt;/strong&gt; writing API GET requests in R or Python and creating data pipelines to be ingested and transformed into an insight-rich and user-friendly PowerBI Dashboard.&lt;/p&gt;
+
+&lt;p&gt;And finally on whatever days that are left, I become a &lt;strong&gt;Data Scientist&lt;/strong&gt; that attempts to classify unstructured text data using a mixed membership approach to topic modeling in R.&lt;/p&gt;
+
+&lt;p&gt;These are all the things that I have become over the years to be able to answer the problems that I find most interesting.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/images/about/fullstack-meme.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Full Stack Analyst / &lt;a href=&quot;https://imgflip.com/i/5816bn&quot;&gt;Full Stack Analyst&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;All jokes aside, I believe that a &lt;strong&gt;full-stack analyst&lt;/strong&gt; is someone who is curious by nature and loves to apply their diverse assortment of analytical skills and techniques to solve valuable problems.&lt;/p&gt;
+
+&lt;p&gt;That, or a generally informed and indecisive person as it relates to careers within data &amp;amp; analytics.&lt;/p&gt;
+</description>
+                <pubDate>Fri, 19 Nov 2021 00:00:00 -0800</pubDate>
+                <link>http://localhost:4000/blog/full-stack-analytics</link>
+                <guid isPermaLink="true">http://localhost:4000/blog/full-stack-analytics</guid>
+                
+                <category>all-projects</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Top 6 analytics initiatives that happened in Vancouver, 2020</title>
+                <description>&lt;p&gt;&lt;em&gt;&lt;a href=&quot;https://theonebrief.com/wp-content/uploads/2019/11/Collab_Website_image-1000x589_3.jpg&quot;&gt;Image&lt;/a&gt;: Fight To The Top: Is Collaboration The New Competition, from TheOneBrief&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In a previous &lt;a href=&quot;/2020/12/23/badm-blog-1/&quot;&gt;article&lt;/a&gt;, I briefly went over the purposeful 6-year history of the SFU BADM Hackathon and Industry Forum.&lt;/p&gt;
+
+&lt;p&gt;The event serves as a platform to connect and assist in the accelerated growth of analytics in the Greater Vancouver Area.&lt;/p&gt;
+
+&lt;p&gt;As a former participant and current alumnus of the SFU Beedie and BADM programs, the event holds a special place in my heart. Aside from it being the reason that I landed my first job in analytics, the main reasons I value this hackathon are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An opportunity to create new connections with other analytics leaders here in Vancouver&lt;/li&gt;
+  &lt;li&gt;An occasion to deepen old connections from previous encounters&lt;/li&gt;
+  &lt;li&gt;A chance to learn and discuss best practices, as well as share experiences with the growing analytics community&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-analytics-legend-of-vancouver-2020&quot;&gt;The Analytics Legend of Vancouver 2020&lt;/h2&gt;
+
+&lt;p&gt;As a member of the 2020 Industry Forum Steering Committee, I had the pleasure of working alongside some well-established Analytics leaders in Vancouver.&lt;/p&gt;
+
+&lt;p&gt;This year’s steward, Matt St. John, Director of Ecommerce &amp;amp; Technology Analytics at Best Buy Canada (also my boss), encouraged me to bring some new form of excitement into the event.&lt;/p&gt;
+
+&lt;p&gt;With a lot of St. John’s coaching (and perhaps entirely biased by a life of sports and competition), I proposed a new competition to the Industry Forum: The Analytics Legend of Vancouver.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-symposium-of-analytics-achievement-by-analytics-pros-for-analytics-pros&quot;&gt;A Symposium of Analytics Achievement by Analytics Pros, for Analytics Pros&lt;/h2&gt;
+
+&lt;p&gt;Students use the BADM Hackathon as their way to learn, share, and connect with the Analytics community in Vancouver. Those who commit to this and perform well can be rewarded with exciting internships and job prospects.&lt;/p&gt;
+
+&lt;p&gt;Why not create a similar event for industry pros?&lt;/p&gt;
+
+&lt;p&gt;The Analytics Legend of Vancouver competition is all about connecting data pros in the GVA. It puts the spotlight on the most promising analytics initiatives happening in British Columbia.&lt;/p&gt;
+
+&lt;p&gt;In the first-ever competition, six organizations were voted in by their peers to share why their greatest analytics achievement this year deserved legendary status, in 7 minutes or less.&lt;/p&gt;
+
+&lt;p&gt;The organization that was able to illustrate superior analytics innovation, transformative business impact, or dazzling presentation skills would be crowned The Legend by their peers.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-ernst--young&quot;&gt;1. Ernst &amp;amp; Young&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/ey_logo.png&quot; alt=&quot;Ernst &amp;amp; Young Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Presented by &lt;a href=&quot;https://www.linkedin.com/in/kanikasanduja/&quot;&gt;Kanika Sanduja&lt;/a&gt;, Senior Consultant &amp;amp; &lt;a href=&quot;https://www.linkedin.com/in/sam-mazerolle/&quot;&gt;Sam Mazerolle&lt;/a&gt;, AI Consultant&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Topic:&lt;/strong&gt; Using Deep Q Reinforcement Learning to optimize front-end collections treatment for Big Banks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intro:&lt;/strong&gt; How do the big banks use their data to inform smarter debt collection strategies? Traditional collections strategies are devised based on broad customer risk exposure segments customers are assigned to. This generalized approach ignores the relative cost of the benefits of competing treatments and creates inefficiencies in treatment resource allocation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; A front-end collections treatment strategy using a Deep-Q Reinforcement Learning model.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-aritzia&quot;&gt;2. Aritzia&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/aritzia_logo.png&quot; alt=&quot;Aritzia Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Presented by &lt;a href=&quot;https://www.linkedin.com/in/ojduval/&quot;&gt;Olivier Duval&lt;/a&gt;, Director of Digital Analytics&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Topic:&lt;/strong&gt; Building a one-stop-shop analytics portfolio that combines sales, returns, onsite customer behaviour, and product reviews to identify opportunities.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intro:&lt;/strong&gt; As a vertically integrated fashion company, Aritzia designs, manufactures, and sells women’s clothing under private brands. How can analytics support the various teams and help improve decisions around designing, buying, planning, and merchandising products?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; A one-stop-shop analytics portfolio that combines sales, returns, onsite customer behaviour, and product reviews to enable the identification of opportunities.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-rocky-mountaineer&quot;&gt;3. Rocky Mountaineer&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/rockymountaineer_logo.png&quot; alt=&quot;Rocky Mountaineer Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Presented by &lt;a href=&quot;https://www.linkedin.com/in/michael-lake-49534765/&quot;&gt;Michael Lake&lt;/a&gt;, Manager of Data Analytics&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Topic:&lt;/strong&gt; Building a sales optimization scheduling tool in PowerBI to identify opportunities for the Outside Sales team.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intro:&lt;/strong&gt; Rocky Mountaineer’s North American Outside Sales team members faced the challenge of covering large geographic areas with limited time and resources. In most cases, it was three or more states/provinces. How might the analytics team identify opportunities and optimize their efforts?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; The team built a PowerBI mapping tool that allowed the Outside Sales team to visualize all branch locations in their territory, understand the priority of visiting each of them, and plan their sales visits in the market.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-best-buy-canada&quot;&gt;4. Best Buy Canada&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/bestbuy_logo.png&quot; alt=&quot;Best Buy Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Presented by &lt;a href=&quot;https://www.linkedin.com/in/joshualoong/&quot;&gt;Joshua Loong&lt;/a&gt;, Data Scientist&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Topic:&lt;/strong&gt; Utilizing a novel testing methodology for a new multi-channel experience in order to manage risk and understand the true impact before the busy holiday season.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intro:&lt;/strong&gt; If the retail industry were a sport, the holiday season would be the playoffs. This year, the teams at Best Buy Canada faced the challenge of designing and creating a safe and optimized multi-channel retail experience in time for the holidays. A solution that, if proven a winner, needed to go live in 130 stores across the country. The analytics teams needed to develop a test approach that would communicate risk to the senior leadership team and didn’t require randomization at the user level (since it’s a combined online and offline experience).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; The analytics team used advanced counterfactual modeling to compare a number of cities with the new experience to a synthetic group of other regions with the old experience, based on cross-functional datasets from e-commerce, store, finance, and user experience.&lt;/p&gt;
+
+&lt;h3 id=&quot;5-coast-capital-savings&quot;&gt;5. Coast Capital Savings&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/coastcapital_logo.png&quot; alt=&quot;Coast Capital Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Presented by &lt;a href=&quot;https://www.linkedin.com/in/robhollerin/&quot;&gt;Rob Hollerin&lt;/a&gt;, Director of Analytics and Data Science&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Topic:&lt;/strong&gt; Learning how Coast Capital Savings has leverage analytics across the organization to navigate through the Pandemic.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intro:&lt;/strong&gt; How did one of the most well-known credit unions in the lower mainland use analytics to navigate the uncertainty of the COVID-19 pandemic? The team at Coast Capital Savings walked us through some of the most exciting initiatives they worked on throughout the year.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; From integrating new data sources to machine learning and qualitative research in order to identify and support their COVID impacted members, the work this year allowed the analytics team to improve their understanding of member behaviour and the financial implication in these changing times.&lt;/p&gt;
+
+&lt;h3 id=&quot;6-vancouver-coastal-health&quot;&gt;6. Vancouver Coastal Health&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/vch_logo.png&quot; alt=&quot;Vancouver Coast Capital Health Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Presented by &lt;a href=&quot;https://www.linkedin.com/in/aleemteja/&quot;&gt;Aleem Teja&lt;/a&gt;, Director of System Improvement&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Topic:&lt;/strong&gt; Increasing patient traffic safely during the pandemic in order to deliver timely care&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intro:&lt;/strong&gt; Not all superheroes wear capes, some wear scrubs! In the wake of one of the most devastating pandemics that has swept the modern world, the team at Vancouver Coastal Health asked us to imagine visiting one of their hospitals during the pandemic. Picture this: you have an app that tells you how long it will take to travel to the outpatient clinic. You get there early, but you are surprised by a long lineup for the elevators. Now you may be thinking, will you make it to your appointment on time?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; The superhero analytics team at Vancouver Coastal Health told a riveting story on how they used modeling masks to increase elevator throughput. Decision-makers at VGH’s Gordon and Leslie Diamond Healthcare Centre implemented social distancing guidelines to keep patients safe on the way to their clinic appointments.&lt;/p&gt;
+
+&lt;h2 id=&quot;this-years-analytics-legend-of-vancouver&quot;&gt;This year’s Analytics Legend of Vancouver&lt;/h2&gt;
+
+&lt;p&gt;All six presentations were fantastic, but there can only be one champ: this year, Michael Lake and Rocky Mountaineer were crowned the 2020 Analytics Legend of Vancouver!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-2/analyticslegend_slide.png&quot; alt=&quot;Analytics Legend 2020&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Michael and his team exemplified what it means to be an analytics leader in Vancouver. It’s not always about the most complex algorithm; it is critical to realize that analytics does not win in silos. Before you write a line of code, there are two magical ingredients needed to cook up a win: problem identification, and bringing others along for the ride.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“If I were given one hour to save the planet, I would spend 59 minutes defining the problem and one minute resolving it.”&lt;br /&gt;
+&lt;br /&gt;
+&lt;em&gt;Albert Einstein&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Perhaps inspired by the great Albert Einstein, the data folks at Rocky Mountaineer prioritized focusing on the right problem and delivered a BI tool that significantly improved the productivity of their Outside Sales team. Pair that with a masterful sprinkle of analytics wow factor, and it’s no surprise that the team earned the Analytics Legend of Vancouver title.&lt;/p&gt;
+
+&lt;p&gt;Eternal bragging rights, a custom trophy supplied by SFU, and a great conversation starter for the next time we meet. Special mention to Best Buy Canada and Vancouver Coastal Health who were this year’s runners-ups.&lt;/p&gt;
+
+&lt;p&gt;Think your team is worthy of analytic legend status? Well, then I expect to see you at next year’s Industry Forum.&lt;/p&gt;
+</description>
+                <pubDate>Wed, 06 Jan 2021 00:00:00 -0800</pubDate>
+                <link>http://localhost:4000/blog/badm-blog-2</link>
+                <guid isPermaLink="true">http://localhost:4000/blog/badm-blog-2</guid>
+                
+                <category>all-projects</category>
+                
+                <category>events</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>3 key topics from an analytics industry forum in Vancouver</title>
+                <description>&lt;p&gt;&lt;em&gt;&lt;a href=&quot;https://www.wigzo.com/blog/wp-content/uploads/2016/04/wordpress_plugin_for_elearning.png&quot;&gt;Image&lt;/a&gt;: Data Space from Wigzo&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;celebrating-analytics-in-2020&quot;&gt;Celebrating Analytics in 2020&lt;/h2&gt;
+
+&lt;p&gt;Most data &amp;amp; analytics pros can relate to the habitual routine of reaching for some trusty headphones and a go-to Spotify playlist in preparation for an analysis. The deeper the analysis, the deeper the focus.&lt;/p&gt;
+
+&lt;p&gt;We like to dive deep, so deep sometimes that lunch happens at dinner time. And sometimes its eggs for lunch, which means eggs for dinner.&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/dzuntOSsJuA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;Analysts need to dive deep to understand the problem. 
+In the same way that a doctor takes time to properly diagnose their patients, analysts must carefully diagnose the business problem. Performing open-heart surgery on a broken ankle is probably not going to help anything.&lt;/p&gt;
+
+&lt;p&gt;The ability to zoom in is clearly important, but so is the ability to zoom out. Analysts need to recognize what the bigger picture looks like in order to inform the best possible decision.&lt;/p&gt;
+
+&lt;p&gt;You might ask, how does an analyst acquire this skill?&lt;/p&gt;
+
+&lt;p&gt;The answer is simple: by chatting with you!&lt;/p&gt;
+
+&lt;p&gt;That’s right, you, dear analyst. Analytics professionals need the perspective and knowledge sharing that comes from learning about the experience of their peers.&lt;/p&gt;
+
+&lt;h2 id=&quot;hello-world&quot;&gt;Hello, World!&lt;/h2&gt;
+&lt;p&gt;I’m a Data Analyst at Best Buy Canada, and at the time of writing this post, I worked on the product technology teams that helps you get your products.&lt;/p&gt;
+
+&lt;p&gt;Within our analytics community of practice, one of the most important themes this year has been staying connected with people. For me, this has meant a combination of 1:1 virtual meetings and informal group chats with some folks that, in a pre-pandemic world, I would have visited at their desks.&lt;/p&gt;
+
+&lt;p&gt;Seeking human connection with my peers, not some transactional relationship that is bound to expire.
+It is also a phenomenal excuse to set up online board games on a late Friday afternoon to get the social and creative juices flowing.&lt;/p&gt;
+
+&lt;p&gt;Building authentic connection isn’t hard, it just takes a little sweat equity. And that is why hackathons and industry forum are so powerful.&lt;/p&gt;
+
+&lt;p&gt;One event that is truly excellent at empowering analytics folks to connect and learn from one another is the SFU BADM Hackathon &amp;amp; Industry Forum. It has provided a platform for developing a strong community of analytics leaders here in Vancouver since 2016.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-sfu-business-analytics--decisions-badm-hackathon&quot;&gt;The SFU Business Analytics &amp;amp; Decisions (BADM) Hackathon&lt;/h2&gt;
+
+&lt;p&gt;In 2016, Professors Robert Krider and Jason Ho at the SFU Beedie School of Business launched the first-ever Business Analytics and Decision-Making (BADM) Hackathon for students.&lt;/p&gt;
+
+&lt;p&gt;With the support of analytics pioneers in Vancouver that formed the steering committee, an annual event including an industry forum was born.&lt;/p&gt;
+
+&lt;p&gt;Several years later and the purpose of these forums remains the same: discuss best practices, experiences, lessons learned, and assist in the accelerated growth of analytics in the Greater Vancouver Area.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-1/steering_com.png&quot; alt=&quot;BADM Hackathon Steering Committee&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-2020-industry-forum-topics-and-format&quot;&gt;The 2020 Industry Forum Topics and Format&lt;/h2&gt;
+
+&lt;p&gt;44 analytics leaders from some of the top companies in Vancouver joined us virtually for the annual SFU BADM Vancouver Analytics Industry Forum.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/badm-blog-post-1/participants.png&quot; alt=&quot;BADM Hackathon Steering Committee&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first half of the event included three case study presentations followed by round-table discussions:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Solving the analytics talent gap in Vancouver&lt;/li&gt;
+  &lt;li&gt;Storytelling with data&lt;/li&gt;
+  &lt;li&gt;Building a self-serve data culture&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Its in these break-out sessions where these valuable human connections are made. In this article, I will be discussing the key takeaways that came from each individual group discussion.&lt;/p&gt;
+
+&lt;p&gt;The second half of the event featured a new competition to come together and celebrate the &lt;strong&gt;six of the most exciting analytics initiatives happening in Vancouver this year&lt;/strong&gt; and the crowning of a champion. There will be a second article published in the next week all about this competition.&lt;/p&gt;
+
+&lt;h2 id=&quot;topic-1-solving-the-analytics-talent-gap-in-vancouver&quot;&gt;Topic 1: Solving the Analytics Talent Gap in Vancouver&lt;/h2&gt;
+
+&lt;p&gt;I joined Best Buy’s Digital Intelligence team as an intern Digital Analyst in the spring of 2018. I appreciated how the team never treated me as an intern. Instead of building PPT decks all day long, I was encouraged to chase business problems and expected to add value. It is one of the main reasons I decided to come back after my University program at SFU.&lt;/p&gt;
+
+&lt;p&gt;Finding and retaining analytics talent is not easy. Data &amp;amp; Analytics focused university programs - like the SFU BADM, SFU Masters in Big Data, UBC MBAN, UBC MDS - are creating strong pipelines of entry level talent. Still, hiring remains one of the key challenges that persist.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;How can organizations navigate the tricky landscape of finding both experienced and entry level talent?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Matt St. John, Director of E-Commerce and Technology Analytics at Best Buy Canada, led the group through a lively discussion of the problems that exist with hiring analytics talent in Vancouver.&lt;/p&gt;
+
+&lt;p&gt;Below is a summary of the &lt;strong&gt;three most interesting takeaways&lt;/strong&gt; from the analytics talent gap in Vancouver:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Talent bottlenecks&lt;/strong&gt; caused by misalignment of talent expectation and industry needs, impeding hiring efforts&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Attrition of talent&lt;/strong&gt; to other roles (e.g. marketing, management, IT, etc..) and markets (East Coast, US, etc..) continues to be a challenge.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;New data &amp;amp; analytics roles at various levels of seniority&lt;/strong&gt; as a result of the maturing analytics in Vancouver. The top organizations must be able to recognize talent and pair them to relatively new roles. Examples included technical product managers and analytics practice leads.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The group also discussed &lt;strong&gt;six actionable opportunities&lt;/strong&gt; that exist to solve the talent gap:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Clearly articulate career development&lt;/strong&gt; with data and analytics professionals. Create career paths for young professionals with industry-aligned standardized job titles, descriptions, and salary bands.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Be more specific in the job description&lt;/strong&gt; and match them with the appropriate level of experience. For example, standardizing and communicating data science skills vs. data engineer skills may improve the matching of suitable candidates to opportunities.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Create industrywide support and mentorship program&lt;/strong&gt; to assist professionals as they work through their careers in Vancouver.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Develop consistent communication&lt;/strong&gt; and messaging across the industry to provide clarity, stability, and opportunity in the market.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Continue to actively participate&lt;/strong&gt; in different communities of interest where analytics practitioners can connect frequently and share opportunities.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Take advantage of remote work&lt;/strong&gt; to unlock the talent in other geographic areas.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;topic-2-storytelling-with-data&quot;&gt;Topic 2: Storytelling with Data&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Storytelling is the greatest technology that humans have ever created.”  &lt;br /&gt;
+&lt;br /&gt;
+&lt;em&gt;Jon Westenberg&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;These days, everyone who knows how to use EXCEL and PowerPoint can call themselves a storyteller. But there is more to storytelling than cool visualizations.&lt;/p&gt;
+
+&lt;p&gt;Before breaking into our discussion groups, Jeremy Coughlin, VP of Enterprise Analytics from Coast Capital Savings, summarized his &lt;strong&gt;four key takeaways&lt;/strong&gt; to improve your storytelling skills:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Be authentic. Let your own personality shine through.&lt;/li&gt;
+  &lt;li&gt;Get to the point. Keep it simple: tell people what you are going to tell them, tell them, then summarize.&lt;/li&gt;
+  &lt;li&gt;Drive action. Actionable insights will always defeat fun facts.&lt;/li&gt;
+  &lt;li&gt;Know your audience, and the context. The message is more important than the medium - tailor your presentation accordingly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;topic-3-building-a-self-serve-data-culture&quot;&gt;Topic 3: Building a Self-Serve Data Culture&lt;/h2&gt;
+
+&lt;p&gt;Self-serve data cultures are all about breaking down the barriers preventing data from being employed within our own organizations.&lt;/p&gt;
+
+&lt;p&gt;At Best Buy Canada, the analytics team has invested a lot of effort over the years to democratize data and knowledge at scale.&lt;/p&gt;
+
+&lt;p&gt;One recent example is the investment in Best Buy Canada’s Data University. Inspired by &lt;em&gt;&lt;a href=&quot;https://medium.com/airbnb-engineering/how-airbnb-democratizes-data-science-with-data-university-3eccc71e073a&quot;&gt;Airbnb’s approach to democratizing data&lt;/a&gt;&lt;/em&gt;, Best Buy’s Data University focused on bringing awareness, education, and support for all users within the company.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Whether you are an analytics pro or someone who’s new to looking at data, a self-serve data culture is one that strives to provide the access, knowledge and tools necessary to use data to guide your solution.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Organizations in Vancouver face similar hurdles in the pursuit of analytics maturity. Olivier Duval, the Director of Digital Analytics at Aritzia, led the group through his learnings of building a self-service analytics culture as summarized below:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Self-serve analytics is a continuous journey. Requires training, support, mechanisms, and champions to support different users.&lt;/li&gt;
+  &lt;li&gt;Self-serve works better in different subsets. The organization needs to be OK with people making mistakes, and design programs to improve the overall data maturity.&lt;/li&gt;
+  &lt;li&gt;Self-serve does not have to be a free-for-all. Put appropriate governance in place and enforce a process whereby users must get their self-serve work vetted to ensure accuracy.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;celebrating-analytics-in-2020-is-about-building-meaningful-connections&quot;&gt;Celebrating Analytics in 2020 is About Building Meaningful Connections&lt;/h2&gt;
+
+&lt;p&gt;In closing, I’d like to reflect on the importance of staying connected. Just because remote is the new normal, it does not mean we can’t start meaningful conversations with peers outside our organizations.&lt;/p&gt;
+
+&lt;p&gt;As mentioned earlier, it is critical for analytics leaders to build these relationships so that we can learn from one another and take these learnings into our own organizations. This is how we elevate the analytics maturity in Vancouver.&lt;/p&gt;
+
+&lt;p&gt;Technology exists to bring us together, and what better occasion is there to come together than to celebrate our awesome craft by way of competition.&lt;/p&gt;
+
+&lt;p&gt;I look forward to seeing you at a future data and analytics meetup in Vancouver. I also eagerly await what the best analytics project of 2021 will be in the next Analytics Legend of Vancouver competition…&lt;/p&gt;
+
+</description>
+                <pubDate>Wed, 23 Dec 2020 00:00:00 -0800</pubDate>
+                <link>http://localhost:4000/blog/badm-blog-1</link>
+                <guid isPermaLink="true">http://localhost:4000/blog/badm-blog-1</guid>
+                
+                <category>all-projects</category>
+                
+                <category>events</category>
+                
+                
+            </item>
+        
+    </channel>
+</rss>
