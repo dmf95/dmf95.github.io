@@ -1,0 +1,15 @@
+# Jekyll build output — GitHub Pages rebuilds from source, so this is never committed
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby / Bundler
+.bundle/
+vendor/
+
+# OS & editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
