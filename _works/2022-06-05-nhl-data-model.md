@@ -6,7 +6,9 @@ date: 2022-06-05
 image: /images/datarena/hockey-analytics-meme.png
 tags: [all-projects, data-engineering, python, singer, meltano, bigquery, dbt]
 ---
-This is first of a series of posts that delves into exploring, organizing, and modeling on public Hockey (NHL) data. I am one of the two developers of this work alongside my colleague [Gavin He](https://github.com/gavh3). I will occasionally cross-post the cool work we do within our "organization" (called [the-data-base](https://the-data-base.github.io/)) here on fullstaxx.
+> 📌 **This is the origin story (v1, 2022).** The stack described here - Meltano/Singer taps and BigQuery - has since been fully rebuilt on a leaner, free, local-first foundation (dlt + DuckDB) with a proper calibrated ML model and a live app. For where this went, see **[datarena.app](../work/datarena)** and the **[xG model deep-dive](../work/nhl-xg-model)**. I've kept this post as-is because the journey is worth remembering.
+
+This is the first of a series of posts that delves into exploring, organizing, and modeling public Hockey (NHL) data. I am one of the two developers of this work alongside my colleague [Gavin He](https://github.com/gavh3). I occasionally cross-post the cool work we do within our "organization" (called [the-data-base](https://the-data-base.github.io/)) here on fullstaxx.
 
 > A modern application of data-engineering to enable data science on public Hockey (NHL) data for the purposes of learning & development
 
@@ -46,7 +48,7 @@ Below is a flow diagram explaining how it works:
 
 
 Resources
-* Repo: [tap-nhl](https://github.com/bicks-bapa-roob/dbt-nhl-breakouts)
+* Repo (archived v1): `tap-nhl` - since replaced by [dlt](https://dlthub.com/) pipelines in [datarena-dlt](../work/datarena)
 
 ### Data transformation & loading
 
@@ -58,12 +60,11 @@ In other words, this is where the SQL magic happens using dbt. Ultimately, this 
   * Reliable data that is tested and validated before ever making it into production
 
 Resources
-* Repo: [dbt-nhl-breakouts](https://github.com/bicks-bapa-roob/dbt-nhl-breakouts)
-* Documentation: [dbt generated documentation](https://bicks-bapa-roob.github.io/dbt-nhl-breakouts/#!/overview)
+* Repo (archived v1): `dbt-nhl-breakouts` - the dbt modeling has since moved to `dbt-duckdb` in [datarena-dbt](../work/datarena), with tests on every grain and SQLFluff linting
 
 ### Data science
 
-Consider this section separate from the rest. Each question that we decide to answer of our newly modeled data will live in this bucket. For example, one of the projects that spawned from this was the [nhl-breakouts project](https://github.com/bicks-bapa-roob/nhl-breakouts)
+Consider this section separate from the rest. Each question that we decide to answer of our newly modeled data lives in this bucket. In v1 this was a handful of notebooks; in the [2026 rebuild](../work/datarena) it became a proper, packaged ML effort - a [calibrated expected-goals model](../work/nhl-xg-model) with temporal validation and experiment tracking.
 
 
 ## Resources
