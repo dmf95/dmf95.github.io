@@ -22,7 +22,7 @@ This June, I’m taking some of that work to Databricks’ [Data + AI Summit 202
 
 ## Always Growing
 
-Mid 2025, I moved from Vancouver to Seattle. Also in 2025, I started pursuing my Master’s in Analytics at Georgia Tech ([OMSA](https://pe.gatech.edu/degrees/analytics)). It's not really for the credential - while I think it will help with some career goals, I believe sharpening the fundamentals is how I keep leveling up. As interesting as the program has been so far, I scratch the same itch in the open with [datarena](/work/datarena), a full ML platform I build end-to-end exactly the way I think it should be done. If that resonates, I’d love to [connect](https://www.linkedin.com/in/domenicfayad/).
+Mid 2025, I moved from Vancouver to Seattle. Also in 2025, I started pursuing my Master’s in Analytics at Georgia Tech ([OMSA](https://pe.gatech.edu/degrees/analytics)). It's not really for the credential - while I think a MsC will help with some career goals, I believe its important to always keep learning. As interesting as the program has been so far, I scratch the same itch with side projects like [datarena](/work/datarena), a full ML platform I build end-to-end exactly the way I think it should be done. If that resonates, I’d love to [connect](https://www.linkedin.com/in/domenicfayad/).
 
 ## Connect with Me
 
