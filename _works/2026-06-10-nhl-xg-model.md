@@ -11,7 +11,7 @@ tags: [all-projects, machine-learning, xgboost, calibration, mlops, mlflow, pyth
 
 This is the technical companion to [datarena](../work/datarena). If the main write-up is the *what*, this is the *how* - the expected-goals model that everything else in the platform exists to serve.
 
-I built this the way I'd build a model at work: temporal validation, calibration as a first-class concern, an A/B to justify the architecture, and full experiment tracking. It's a hobby project on public data, but the rigor is the whole point.
+I built this the way I'd build a model at work: temporal validation, calibration as a first-class concern, an A/B to justify the architecture, and full experiment tracking. It's a hobby project on public data, but I wanted to hold it to the same standard.
 
 > **Expected Goals (xG)** estimates the probability that a given shot becomes a goal. Sum it up, and you can measure how many goals a player or team *should* have scored or allowed - a far more stable signal than goals alone.
 
