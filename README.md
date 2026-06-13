@@ -1,6 +1,6 @@
 # dmf95.github.io
 
-Personal portfolio & blog of **Domenic Fayad** — a data scientist building decision-intelligence
+Personal portfolio & blog of **Domenic Fayad** - a data scientist building decision-intelligence
 products. Built with [Jekyll](https://jekyllrb.com/) and served by GitHub Pages at
 **[www.domenicfayad.com](https://www.domenicfayad.com/)** (see [`CNAME`](CNAME)).
 
@@ -20,7 +20,7 @@ bundle exec jekyll serve   # → http://localhost:4000 (auto-rebuilds on save)
 
 | Path | What it holds |
 |---|---|
-| `_works/` | Portfolio project posts — the `works` collection (`/work/:slug`) |
+| `_works/` | Portfolio project posts - the `works` collection (`/work/:slug`) |
 | `_posts/` | Blog posts (`/blog/:slug`) |
 | `_pages/` | Standalone pages (About, Contact, …) |
 | `_data/settings.yml` | Site-wide config: nav, hero, social links, section toggles |
@@ -34,7 +34,7 @@ bundle exec jekyll serve   # → http://localhost:4000 (auto-rebuilds on save)
 ## Adding a project or post
 
 Create `_works/YYYY-MM-DD-slug.md` (or `_posts/…` for the blog). The **date prefix sets ordering**
-(newest first) but is **stripped from the URL** — the file `2026-06-11-datarena.md` is served at
+(newest first) but is **stripped from the URL** - the file `2026-06-11-datarena.md` is served at
 `/work/datarena`. Front matter:
 
 ```yaml
@@ -52,7 +52,7 @@ tags: [all-projects, python]        # include `all-projects` to appear in the ma
 
 ## Deployment
 
-Push to `main` — **GitHub Pages builds the site from source** and publishes it. The generated
+Push to `main` - **GitHub Pages builds the site from source** and publishes it. The generated
 `_site/` directory is git-ignored and must **not** be committed; editing it has no effect on the
 live site.
 
