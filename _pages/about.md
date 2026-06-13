@@ -12,7 +12,7 @@ My name is Dom. I’m a data scientist, endlessly curious about why things work 
 
 ## About Me
 
-Outside of work I’m into sports, games, and sci-fi - I follow the NFL, NHL, and Premier League (my "big 3" are the 49ers, Oilers, and Man United). I (used to) play soccer, these days I run lots, attend some group fitness classes, and try out the latest and greatest in the world of applying generative models. Outside of hobbies and work, most of my time goes into my Master's program, side project, and (of course) to my partner Vanessa and our dog Arlo. I also collect sports cards over at [@goat.sportscards](https://www.instagram.com/goatsportscards/).
+Outside of work I’m into sports, games, and sci-fi - I follow the NFL, NHL, and Premier League (my "big 3" are the 49ers, Oilers, and Man United). I (used to) play soccer, these days I run lots, attend some group fitness classes, and try out the latest and greatest in the world of applying generative models. Outside of hobbies and work, most of my time goes into my Master's program, side project, and (of course) to my partner Vanessa and our dog Arlo. I also collect sports cards over at [@goat.sportscards](https://www.instagram.com/goat.sportscards/).
 
 ## What I Do
 
